@@ -1,33 +1,29 @@
 # Import dependencies
 from torchvision.transforms import transforms
 from torchvision.transforms import functional as F
-from torch.utils.data import DataLoader
-from torch.utils.data import ConcatDataset
+
 import torch
 from torch import nn
 import torchvision
-from torchvision import models
+from torch.utils.data import DataLoader
 from torchvision.datasets import ImageFolder
-import os
-from os import path
 import torch.optim as optim
-import matplotlib.pyplot as plt
-import numpy as np
-import collections
-from sklearn.model_selection import KFold
-from tqdm import tqdm
 
-from torch.utils.data import Dataset, DataLoader,TensorDataset,random_split,SubsetRandomSampler, ConcatDataset
-# from torch.nn import functional as F
-import torchvision
-import pandas as pd
 from torch.utils.tensorboard import SummaryWriter
 import torch.backends.cudnn as cudnn
 
+
+# from sklearn.model_selection import KFold
 from sklearn.metrics import f1_score, recall_score, average_precision_score, roc_auc_score
 from sklearn.preprocessing import label_binarize
 from sklearn.utils.multiclass import unique_labels
 
+# import matplotlib.pyplot as plt
+# import numpy as np
+# import pandas as pd
+from tqdm import tqdm
+
+import os
 import socket
 import sys
 import time
@@ -35,6 +31,8 @@ from datetime import timedelta, datetime
 import errno
 import random
 import numbers
+
+
 
 def accuracy(output, target):
     with torch.no_grad():

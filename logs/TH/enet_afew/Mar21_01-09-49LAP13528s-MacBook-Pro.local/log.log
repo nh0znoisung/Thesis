@@ -167,3 +167,7 @@ Change new classifier at classifier layer
 [-] VALIDATING [28/30] | loss=63.3385 | acc=0.6699 | rec=0.6696 | f1=0.5723 | aucpr=0.6043 | aucroc=0.7216
 [*] epoch time = 1843.75s | lr = 1e-05
 
+[-] TRAIN [29/30] | loss=63.2399 | acc=0.6757 | rec=0.6755 | f1=0.6039 | aucpr=0.6035 | aucroc=0.7222
+[-] VALIDATING [29/30] | loss=63.1361 | acc=0.6699 | rec=0.6696 | f1=0.5731 | aucpr=0.6068 | aucroc=0.7196
+[*] epoch time = 2173.33s | lr = 1e-05
+
