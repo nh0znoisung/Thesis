@@ -125,13 +125,13 @@ def write_log(writer, losses, acc, metrics, e, tag='set'):
 
 def save_checkpoint(epoch, model, tag):
     # 'model_state_dict': model.state_dict(),
-    target_path = os.path.join(target_dir, current_id, model_name + f"_{tag}.pt") # "/content/drive/My Drive/Thesis_Final/models/Affectnet-WM-RR-sample/enet_mtl_acc.pt"
-    os.makedirs(os.path.join(target_dir, current_id) , exist_ok=True)
+    target_path = os.path.join(target_dir, model_name, current_id, model_name + f"_{tag}.pt") # "/content/drive/My Drive/Thesis_Final/models/Affectnet-WM-RR-sample/enet_mtl_acc.pt"
+    os.makedirs(os.path.join(target_dir, model_name, current_id) , exist_ok=True)
     torch.save({
         'epoch': epoch,
         'model': model
     }, target_path)
-    print(f"-------Save model with tag {tag} at epoch {epoch} at {target_path}")
+    print(f"[<*>] Save model with tag {tag} at epoch {epoch} at {target_path}")
 
 class Logger(object):
     console = sys.stdout
@@ -254,8 +254,15 @@ def freeze_model(model):
     print("----- Freeze base architecture for fine tuning ------")
     for param in model.parameters():
         param.requires_grad = False
-    for param in model.classifier.parameters():
-        param.requires_grad = True
+    try:
+        for param in model.classifier.parameters():
+            param.requires_grad = True
+    except:
+        try:
+            for param in model.fc.parameters():
+                param.requires_grad = True
+        except:
+            raise Exception("Cannot Freeze model stage. No layer name classfier or fc!!")
 
 def unfreeze_model(model):
     print("----- Unfreeze whole architecture for fine tuning ------")
