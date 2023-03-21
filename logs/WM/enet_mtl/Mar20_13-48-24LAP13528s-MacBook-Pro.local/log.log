@@ -1,0 +1,189 @@
+>>>>    Running on input feature WM \ model name enet_mtl \ dataset Affectnet-WM-RR      >>>>>
+******************************************************
+>> Loading base dataset
+>> Loading model
+Load model pretrained_models/WM/enet_mtl.pt with pre-trained weights with deivce
+Change new classifier at classifier layer
+>> Loading optimizer, criterition, logger
+[>] Begin Fine tuning ------------------------------------------
+----- Freeze base architecture for fine tuning ------
+[-] TRAIN [01/5] | loss=489.0685 | acc=0.5062 | rec=0.5062 | f1=0.5081 | aucpr=0.5296 | aucroc=0.6966
+[-] VALIDATING [01/5] | loss=488.5443 | acc=0.5881 | rec=0.5874 | f1=0.5507 | aucpr=0.6884 | aucroc=0.8129
+-------Save model with tag acc at epoch 1 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 1 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 1021.41s | lr = 0.0001
+
+[-] TRAIN [02/5] | loss=488.4221 | acc=0.5918 | rec=0.5916 | f1=0.5462 | aucpr=0.6196 | aucroc=0.7735
+[-] VALIDATING [02/5] | loss=488.3305 | acc=0.6031 | rec=0.6026 | f1=0.5534 | aucpr=0.6890 | aucroc=0.8150
+-------Save model with tag acc at epoch 2 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 2 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 865.31s | lr = 0.0001
+
+[-] TRAIN [03/5] | loss=488.3006 | acc=0.6086 | rec=0.6084 | f1=0.5620 | aucpr=0.6309 | aucroc=0.7836
+[-] VALIDATING [03/5] | loss=488.2373 | acc=0.6169 | rec=0.6164 | f1=0.5751 | aucpr=0.6899 | aucroc=0.8176
+-------Save model with tag acc at epoch 3 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 3 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 919.05s | lr = 0.0001
+
+[-] TRAIN [04/5] | loss=488.2252 | acc=0.6148 | rec=0.6147 | f1=0.5769 | aucpr=0.6400 | aucroc=0.7876
+[-] VALIDATING [04/5] | loss=488.1793 | acc=0.6306 | rec=0.6303 | f1=0.5986 | aucpr=0.6850 | aucroc=0.8146
+-------Save model with tag acc at epoch 4 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 4 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 869.22s | lr = 0.0001
+
+[-] TRAIN [05/5] | loss=488.1821 | acc=0.6280 | rec=0.6279 | f1=0.5988 | aucpr=0.6390 | aucroc=0.7897
+[-] VALIDATING [05/5] | loss=488.1459 | acc=0.6326 | rec=0.6322 | f1=0.6072 | aucpr=0.6774 | aucroc=0.8091
+-------Save model with tag acc at epoch 5 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 5 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 832.67s | lr = 0.0001
+
+[>] Begin Training ---------------------------------------------
+----- Unfreeze whole architecture for fine tuning ------
+[-] TRAIN [01/30] | loss=447.8038 | acc=0.6515 | rec=0.6514 | f1=0.6251 | aucpr=0.6517 | aucroc=0.7998
+[-] VALIDATING [01/30] | loss=409.0312 | acc=0.6634 | rec=0.6630 | f1=0.6350 | aucpr=0.6908 | aucroc=0.8213
+-------Save model with tag acc at epoch 1 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 1 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 1949.05s | lr = 0.0001
+
+[-] TRAIN [02/30] | loss=374.7433 | acc=0.6712 | rec=0.6711 | f1=0.6437 | aucpr=0.6655 | aucroc=0.8078
+[-] VALIDATING [02/30] | loss=341.9096 | acc=0.6896 | rec=0.6892 | f1=0.6651 | aucpr=0.7067 | aucroc=0.8332
+-------Save model with tag acc at epoch 2 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 2 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 2275.82s | lr = 0.0001
+
+[-] TRAIN [03/30] | loss=313.2672 | acc=0.6863 | rec=0.6862 | f1=0.6638 | aucpr=0.6648 | aucroc=0.8049
+[-] VALIDATING [03/30] | loss=286.0333 | acc=0.6948 | rec=0.6946 | f1=0.6732 | aucpr=0.7177 | aucroc=0.8400
+-------Save model with tag acc at epoch 3 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 3 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 2173.33s | lr = 0.0001
+
+[-] TRAIN [04/30] | loss=262.5421 | acc=0.7003 | rec=0.7002 | f1=0.6804 | aucpr=0.6685 | aucroc=0.8028
+[-] VALIDATING [04/30] | loss=240.3322 | acc=0.7073 | rec=0.7070 | f1=0.6899 | aucpr=0.7133 | aucroc=0.8326
+-------Save model with tag acc at epoch 4 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 4 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 2112.23s | lr = 0.0001
+
+[-] TRAIN [05/30] | loss=221.3949 | acc=0.7019 | rec=0.7019 | f1=0.6862 | aucpr=0.6615 | aucroc=0.7933
+[-] VALIDATING [05/30] | loss=203.5968 | acc=0.7040 | rec=0.7036 | f1=0.6829 | aucpr=0.6944 | aucroc=0.8037
+[*] epoch time = 4645.03s | lr = 0.0001
+
+[-] TRAIN [06/30] | loss=188.5745 | acc=0.7085 | rec=0.7084 | f1=0.6922 | aucpr=0.6581 | aucroc=0.7853
+[-] VALIDATING [06/30] | loss=174.5254 | acc=0.7125 | rec=0.7122 | f1=0.6926 | aucpr=0.6674 | aucroc=0.7734
+-------Save model with tag acc at epoch 6 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 6 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 1683.38s | lr = 0.0001
+
+[-] TRAIN [07/30] | loss=162.7555 | acc=0.7198 | rec=0.7198 | f1=0.7073 | aucpr=0.6555 | aucroc=0.7839
+[-] VALIDATING [07/30] | loss=151.7969 | acc=0.7027 | rec=0.7023 | f1=0.6784 | aucpr=0.6524 | aucroc=0.7527
+[*] epoch time = 1831.54s | lr = 0.0001
+
+[-] TRAIN [08/30] | loss=142.6067 | acc=0.7254 | rec=0.7253 | f1=0.7127 | aucpr=0.6588 | aucroc=0.7804
+[-] VALIDATING [08/30] | loss=134.1154 | acc=0.7014 | rec=0.7010 | f1=0.6814 | aucpr=0.6462 | aucroc=0.7447
+[*] epoch time = 2338.43s | lr = 0.0001
+
+[-] TRAIN [09/30] | loss=126.9598 | acc=0.7312 | rec=0.7311 | f1=0.7200 | aucpr=0.6563 | aucroc=0.7729
+[-] VALIDATING [09/30] | loss=120.3559 | acc=0.7197 | rec=0.7194 | f1=0.7023 | aucpr=0.6514 | aucroc=0.7489
+-------Save model with tag acc at epoch 9 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 9 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 4624.38s | lr = 0.0001
+
+[-] TRAIN [10/30] | loss=114.8190 | acc=0.7295 | rec=0.7294 | f1=0.7185 | aucpr=0.6572 | aucroc=0.7736
+[-] VALIDATING [10/30] | loss=109.7211 | acc=0.6942 | rec=0.6937 | f1=0.6737 | aucpr=0.6449 | aucroc=0.7495
+[*] epoch time = 1556.77s | lr = 0.0001
+
+[-] TRAIN [11/30] | loss=105.3262 | acc=0.7368 | rec=0.7367 | f1=0.7274 | aucpr=0.6613 | aucroc=0.7730
+[-] VALIDATING [11/30] | loss=101.3263 | acc=0.7092 | rec=0.7088 | f1=0.6979 | aucpr=0.6487 | aucroc=0.7566
+[*] epoch time = 2216.34s | lr = 0.0001
+
+[-] TRAIN [12/30] | loss=97.8469 | acc=0.7419 | rec=0.7419 | f1=0.7341 | aucpr=0.6634 | aucroc=0.7740
+[-] VALIDATING [12/30] | loss=94.6516 | acc=0.7217 | rec=0.7214 | f1=0.7083 | aucpr=0.6533 | aucroc=0.7578
+-------Save model with tag acc at epoch 12 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 12 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 1899.67s | lr = 0.0001
+
+[-] TRAIN [13/30] | loss=91.8839 | acc=0.7401 | rec=0.7400 | f1=0.7330 | aucpr=0.6618 | aucroc=0.7724
+[-] VALIDATING [13/30] | loss=89.3335 | acc=0.7001 | rec=0.6997 | f1=0.6963 | aucpr=0.6534 | aucroc=0.7604
+[*] epoch time = 1864.68s | lr = 0.0001
+
+[-] TRAIN [14/30] | loss=87.0025 | acc=0.7457 | rec=0.7456 | f1=0.7379 | aucpr=0.6628 | aucroc=0.7688
+[-] VALIDATING [14/30] | loss=84.9798 | acc=0.6811 | rec=0.6809 | f1=0.6618 | aucpr=0.6321 | aucroc=0.7394
+[*] epoch time = 1938.04s | lr = 0.0001
+
+[-] TRAIN [15/30] | loss=83.0087 | acc=0.7369 | rec=0.7368 | f1=0.7284 | aucpr=0.6589 | aucroc=0.7719
+[-] VALIDATING [15/30] | loss=81.2290 | acc=0.7171 | rec=0.7169 | f1=0.7038 | aucpr=0.6450 | aucroc=0.7464
+[*] epoch time = 1664.40s | lr = 0.0001
+
+[-] TRAIN [16/30] | loss=80.8200 | acc=0.7762 | rec=0.7761 | f1=0.7688 | aucpr=0.6757 | aucroc=0.7778
+[-] VALIDATING [16/30] | loss=80.6759 | acc=0.7302 | rec=0.7299 | f1=0.7194 | aucpr=0.6584 | aucroc=0.7645
+-------Save model with tag acc at epoch 16 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 16 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 1335.32s | lr = 1e-05
+
+[-] TRAIN [17/30] | loss=80.4364 | acc=0.7686 | rec=0.7686 | f1=0.7614 | aucpr=0.6766 | aucroc=0.7802
+[-] VALIDATING [17/30] | loss=80.3353 | acc=0.7295 | rec=0.7293 | f1=0.7184 | aucpr=0.6594 | aucroc=0.7670
+[*] epoch time = 1899.69s | lr = 1e-05
+
+[-] TRAIN [18/30] | loss=80.0873 | acc=0.7766 | rec=0.7765 | f1=0.7703 | aucpr=0.6809 | aucroc=0.7805
+[-] VALIDATING [18/30] | loss=80.0092 | acc=0.7302 | rec=0.7299 | f1=0.7150 | aucpr=0.6543 | aucroc=0.7592
+-------Save model with tag rec at epoch 18 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 1906.98s | lr = 1e-05
+
+[-] TRAIN [19/30] | loss=79.7669 | acc=0.7772 | rec=0.7771 | f1=0.7707 | aucpr=0.6777 | aucroc=0.7801
+[-] VALIDATING [19/30] | loss=79.6813 | acc=0.7250 | rec=0.7247 | f1=0.7134 | aucpr=0.6581 | aucroc=0.7644
+[*] epoch time = 1892.93s | lr = 1e-05
+
+[-] TRAIN [20/30] | loss=79.4421 | acc=0.7776 | rec=0.7775 | f1=0.7713 | aucpr=0.6808 | aucroc=0.7790
+[-] VALIDATING [20/30] | loss=79.3725 | acc=0.7289 | rec=0.7286 | f1=0.7157 | aucpr=0.6528 | aucroc=0.7574
+[*] epoch time = 1875.97s | lr = 1e-05
+
+[-] TRAIN [21/30] | loss=79.1216 | acc=0.7807 | rec=0.7806 | f1=0.7746 | aucpr=0.6861 | aucroc=0.7842
+[-] VALIDATING [21/30] | loss=79.0583 | acc=0.7322 | rec=0.7319 | f1=0.7200 | aucpr=0.6568 | aucroc=0.7635
+-------Save model with tag acc at epoch 21 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_acc.pt
+-------Save model with tag rec at epoch 21 at models/Affectnet-WM-RR/Mar20_13-48-24LAP13528s-MacBook-Pro.local/enet_mtl_rec.pt
+[*] epoch time = 1899.29s | lr = 1e-05
+
+[-] TRAIN [22/30] | loss=78.8177 | acc=0.7742 | rec=0.7741 | f1=0.7673 | aucpr=0.6811 | aucroc=0.7784
+[-] VALIDATING [22/30] | loss=78.7592 | acc=0.7250 | rec=0.7247 | f1=0.7098 | aucpr=0.6550 | aucroc=0.7603
+[*] epoch time = 1887.44s | lr = 1e-05
+
+[-] TRAIN [23/30] | loss=78.5205 | acc=0.7786 | rec=0.7785 | f1=0.7724 | aucpr=0.6791 | aucroc=0.7811
+[-] VALIDATING [23/30] | loss=78.4590 | acc=0.7217 | rec=0.7214 | f1=0.7103 | aucpr=0.6582 | aucroc=0.7641
+[*] epoch time = 1883.01s | lr = 1e-05
+
+[-] TRAIN [24/30] | loss=78.2230 | acc=0.7777 | rec=0.7776 | f1=0.7707 | aucpr=0.6820 | aucroc=0.7814
+[-] VALIDATING [24/30] | loss=78.1696 | acc=0.7269 | rec=0.7266 | f1=0.7162 | aucpr=0.6570 | aucroc=0.7619
+[*] epoch time = 1890.11s | lr = 1e-05
+
+[-] TRAIN [25/30] | loss=77.9304 | acc=0.7892 | rec=0.7891 | f1=0.7824 | aucpr=0.6810 | aucroc=0.7802
+[-] VALIDATING [25/30] | loss=77.8875 | acc=0.7250 | rec=0.7247 | f1=0.7171 | aucpr=0.6597 | aucroc=0.7676
+[*] epoch time = 1886.94s | lr = 1e-05
+
+[-] TRAIN [26/30] | loss=77.6440 | acc=0.7833 | rec=0.7832 | f1=0.7771 | aucpr=0.6847 | aucroc=0.7835
+[-] VALIDATING [26/30] | loss=77.6058 | acc=0.7302 | rec=0.7299 | f1=0.7183 | aucpr=0.6557 | aucroc=0.7629
+[*] epoch time = 1887.38s | lr = 1e-05
+
+[-] TRAIN [27/30] | loss=77.3691 | acc=0.7795 | rec=0.7795 | f1=0.7734 | aucpr=0.6838 | aucroc=0.7824
+[-] VALIDATING [27/30] | loss=77.3349 | acc=0.7230 | rec=0.7227 | f1=0.7083 | aucpr=0.6580 | aucroc=0.7636
+[*] epoch time = 1887.70s | lr = 1e-05
+
+[-] TRAIN [28/30] | loss=77.0895 | acc=0.7855 | rec=0.7855 | f1=0.7799 | aucpr=0.6859 | aucroc=0.7841
+[-] VALIDATING [28/30] | loss=77.0728 | acc=0.7158 | rec=0.7155 | f1=0.7061 | aucpr=0.6549 | aucroc=0.7630
+[*] epoch time = 1896.53s | lr = 1e-05
+
+[-] TRAIN [29/30] | loss=76.8298 | acc=0.7787 | rec=0.7786 | f1=0.7721 | aucpr=0.6831 | aucroc=0.7829
+[-] VALIDATING [29/30] | loss=76.8094 | acc=0.7210 | rec=0.7208 | f1=0.7107 | aucpr=0.6588 | aucroc=0.7663
+[*] epoch time = 1920.46s | lr = 1e-05
+
+[-] TRAIN [30/30] | loss=76.5616 | acc=0.7854 | rec=0.7853 | f1=0.7800 | aucpr=0.6854 | aucroc=0.7836
+[-] VALIDATING [30/30] | loss=76.5487 | acc=0.7236 | rec=0.7233 | f1=0.7102 | aucpr=0.6543 | aucroc=0.7586
+[*] epoch time = 6771.61s | lr = 1e-05
+
+[>] Best Valid -------------------------------------------------
+[+] acc=0.7322
+[+] rec=0.7319
+[+] f1=0.7200
+[+] aucpr=0.7177
+[+] aucroc=0.8400
+
+[*] Fini! -----------------------------------------------------
+[!] total time = 20:00:02.708231s
