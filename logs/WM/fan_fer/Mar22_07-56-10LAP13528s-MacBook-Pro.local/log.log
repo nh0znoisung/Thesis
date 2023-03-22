@@ -1,0 +1,266 @@
+>>>>    Running on input feature WM \ model name fan_fer \ dataset Affectnet-WM-RR      >>>>>
+******************************************************
+>> Loading base dataset
+>> Loading model
+Load model pretrained_models/WM/fan_fer.pt with pre-trained weights with deivce
+Change new classifier at fc layer
+>> Loading optimizer, criterition, logger
+[>] Begin Fine tuning ------------------------------------------
+----- Freeze base architecture for fine tuning ------
+[-] TRAIN [01/5] | loss=262.3834 | acc=0.4437 | rec=0.4435 | f1=0.3907 | aucpr=0.4955 | aucroc=0.6717
+[-] VALIDATING [01/5] | loss=262.1235 | acc=0.5711 | rec=0.5706 | f1=0.5479 | aucpr=0.5877 | aucroc=0.7458
+[<*>] Save model with tag acc at epoch 1 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 1 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 418.15s | lr = 0.0001
+
+[-] TRAIN [02/5] | loss=261.9767 | acc=0.5427 | rec=0.5426 | f1=0.5144 | aucpr=0.5494 | aucroc=0.7204
+[-] VALIDATING [02/5] | loss=261.8313 | acc=0.5776 | rec=0.5773 | f1=0.5537 | aucpr=0.5990 | aucroc=0.7552
+[<*>] Save model with tag acc at epoch 2 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 2 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 527.40s | lr = 0.0001
+
+[-] TRAIN [03/5] | loss=261.7880 | acc=0.5514 | rec=0.5513 | f1=0.5266 | aucpr=0.5595 | aucroc=0.7299
+[-] VALIDATING [03/5] | loss=261.7115 | acc=0.5907 | rec=0.5904 | f1=0.5747 | aucpr=0.6024 | aucroc=0.7586
+[<*>] Save model with tag acc at epoch 3 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 3 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 2409.75s | lr = 0.0001
+
+[-] TRAIN [04/5] | loss=261.7004 | acc=0.5686 | rec=0.5685 | f1=0.5504 | aucpr=0.5661 | aucroc=0.7391
+[-] VALIDATING [04/5] | loss=261.6475 | acc=0.5927 | rec=0.5924 | f1=0.5755 | aucpr=0.6029 | aucroc=0.7594
+[<*>] Save model with tag acc at epoch 4 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 4 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 462.71s | lr = 0.0001
+
+[-] TRAIN [05/5] | loss=261.6466 | acc=0.5661 | rec=0.5660 | f1=0.5516 | aucpr=0.5709 | aucroc=0.7422
+[-] VALIDATING [05/5] | loss=261.6068 | acc=0.5861 | rec=0.5858 | f1=0.5657 | aucpr=0.6014 | aucroc=0.7589
+[*] epoch time = 449.07s | lr = 0.0001
+
+[>] Begin Training ---------------------------------------------
+----- Unfreeze whole architecture for fine tuning ------
+[-] TRAIN [01/60] | loss=175.9203 | acc=0.6055 | rec=0.6054 | f1=0.5793 | aucpr=0.6138 | aucroc=0.7715
+[-] VALIDATING [01/60] | loss=111.2329 | acc=0.6496 | rec=0.6492 | f1=0.6285 | aucpr=0.6362 | aucroc=0.7894
+[<*>] Save model with tag acc at epoch 1 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 1 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 1086.77s | lr = 0.0001
+
+[-] TRAIN [02/60] | loss=77.5972 | acc=0.6435 | rec=0.6434 | f1=0.6297 | aucpr=0.6344 | aucroc=0.7881
+[-] VALIDATING [02/60] | loss=52.9902 | acc=0.6149 | rec=0.6144 | f1=0.6019 | aucpr=0.6331 | aucroc=0.7864
+[*] epoch time = 1010.48s | lr = 0.0001
+
+[-] TRAIN [03/60] | loss=40.1149 | acc=0.6593 | rec=0.6592 | f1=0.6500 | aucpr=0.6413 | aucroc=0.7906
+[-] VALIDATING [03/60] | loss=30.5488 | acc=0.6614 | rec=0.6613 | f1=0.6559 | aucpr=0.6406 | aucroc=0.7853
+[<*>] Save model with tag acc at epoch 3 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 3 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 951.81s | lr = 0.0001
+
+[-] TRAIN [04/60] | loss=25.0131 | acc=0.6564 | rec=0.6563 | f1=0.6460 | aucpr=0.6445 | aucroc=0.7915
+[-] VALIDATING [04/60] | loss=20.6274 | acc=0.6582 | rec=0.6578 | f1=0.6309 | aucpr=0.6476 | aucroc=0.7880
+[*] epoch time = 1702.10s | lr = 0.0001
+
+[-] TRAIN [05/60] | loss=18.0033 | acc=0.6628 | rec=0.6627 | f1=0.6546 | aucpr=0.6412 | aucroc=0.7898
+[-] VALIDATING [05/60] | loss=15.9788 | acc=0.4977 | rec=0.4968 | f1=0.4394 | aucpr=0.6025 | aucroc=0.7495
+[*] epoch time = 1688.99s | lr = 0.0001
+
+[-] TRAIN [06/60] | loss=14.1752 | acc=0.6585 | rec=0.6584 | f1=0.6510 | aucpr=0.6415 | aucroc=0.7883
+[-] VALIDATING [06/60] | loss=12.9287 | acc=0.6379 | rec=0.6377 | f1=0.6445 | aucpr=0.6285 | aucroc=0.7754
+[*] epoch time = 1357.37s | lr = 0.0001
+
+[-] TRAIN [07/60] | loss=11.8359 | acc=0.6597 | rec=0.6596 | f1=0.6519 | aucpr=0.6400 | aucroc=0.7881
+[-] VALIDATING [07/60] | loss=11.0146 | acc=0.6352 | rec=0.6351 | f1=0.6291 | aucpr=0.6254 | aucroc=0.7733
+[*] epoch time = 1025.78s | lr = 0.0001
+
+[-] TRAIN [08/60] | loss=10.3051 | acc=0.6540 | rec=0.6539 | f1=0.6456 | aucpr=0.6362 | aucroc=0.7852
+[-] VALIDATING [08/60] | loss=9.6200 | acc=0.6267 | rec=0.6262 | f1=0.6161 | aucpr=0.6395 | aucroc=0.7859
+[*] epoch time = 847.05s | lr = 0.0001
+
+[-] TRAIN [09/60] | loss=9.0560 | acc=0.6655 | rec=0.6654 | f1=0.6551 | aucpr=0.6431 | aucroc=0.7899
+[-] VALIDATING [09/60] | loss=8.5673 | acc=0.6568 | rec=0.6565 | f1=0.6528 | aucpr=0.6440 | aucroc=0.7871
+[*] epoch time = 885.68s | lr = 0.0001
+
+[-] TRAIN [10/60] | loss=8.2257 | acc=0.6620 | rec=0.6619 | f1=0.6525 | aucpr=0.6411 | aucroc=0.7891
+[-] VALIDATING [10/60] | loss=7.8582 | acc=0.6647 | rec=0.6644 | f1=0.6536 | aucpr=0.6391 | aucroc=0.7863
+[<*>] Save model with tag acc at epoch 10 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 10 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 867.20s | lr = 0.0001
+
+[-] TRAIN [11/60] | loss=7.5042 | acc=0.6674 | rec=0.6673 | f1=0.6551 | aucpr=0.6435 | aucroc=0.7900
+[-] VALIDATING [11/60] | loss=7.2672 | acc=0.6627 | rec=0.6625 | f1=0.6579 | aucpr=0.6285 | aucroc=0.7782
+[*] epoch time = 868.31s | lr = 0.0001
+
+[-] TRAIN [12/60] | loss=6.9922 | acc=0.6757 | rec=0.6756 | f1=0.6669 | aucpr=0.6422 | aucroc=0.7900
+[-] VALIDATING [12/60] | loss=6.7449 | acc=0.6359 | rec=0.6359 | f1=0.6258 | aucpr=0.6391 | aucroc=0.7820
+[*] epoch time = 856.82s | lr = 0.0001
+
+[-] TRAIN [13/60] | loss=6.4485 | acc=0.6701 | rec=0.6700 | f1=0.6577 | aucpr=0.6412 | aucroc=0.7889
+[-] VALIDATING [13/60] | loss=6.4774 | acc=0.5508 | rec=0.5499 | f1=0.5178 | aucpr=0.6331 | aucroc=0.7839
+[*] epoch time = 848.39s | lr = 0.0001
+
+[-] TRAIN [14/60] | loss=6.0537 | acc=0.6716 | rec=0.6715 | f1=0.6582 | aucpr=0.6406 | aucroc=0.7878
+[-] VALIDATING [14/60] | loss=5.7309 | acc=0.6883 | rec=0.6880 | f1=0.6755 | aucpr=0.6532 | aucroc=0.7950
+[<*>] Save model with tag acc at epoch 14 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 14 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 850.30s | lr = 0.0001
+
+[-] TRAIN [15/60] | loss=5.6701 | acc=0.6733 | rec=0.6732 | f1=0.6593 | aucpr=0.6405 | aucroc=0.7858
+[-] VALIDATING [15/60] | loss=5.6306 | acc=0.6117 | rec=0.6118 | f1=0.6021 | aucpr=0.6249 | aucroc=0.7735
+[*] epoch time = 858.44s | lr = 0.0001
+
+[-] TRAIN [16/60] | loss=5.0984 | acc=0.7007 | rec=0.7006 | f1=0.6773 | aucpr=0.6610 | aucroc=0.7964
+[-] VALIDATING [16/60] | loss=4.9897 | acc=0.6988 | rec=0.6984 | f1=0.6696 | aucpr=0.6618 | aucroc=0.7993
+[<*>] Save model with tag acc at epoch 16 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 16 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 1099.30s | lr = 1e-05
+
+[-] TRAIN [17/60] | loss=4.9200 | acc=0.7180 | rec=0.7179 | f1=0.6954 | aucpr=0.6723 | aucroc=0.8017
+[-] VALIDATING [17/60] | loss=4.9238 | acc=0.6948 | rec=0.6946 | f1=0.6710 | aucpr=0.6639 | aucroc=0.8008
+[*] epoch time = 1577.33s | lr = 1e-05
+
+[-] TRAIN [18/60] | loss=4.8751 | acc=0.7175 | rec=0.7174 | f1=0.6971 | aucpr=0.6718 | aucroc=0.7991
+[-] VALIDATING [18/60] | loss=4.8956 | acc=0.6994 | rec=0.6990 | f1=0.6679 | aucpr=0.6638 | aucroc=0.8004
+[<*>] Save model with tag acc at epoch 18 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 18 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 1250.64s | lr = 1e-05
+
+[-] TRAIN [19/60] | loss=4.8400 | acc=0.7221 | rec=0.7220 | f1=0.7040 | aucpr=0.6732 | aucroc=0.8022
+[-] VALIDATING [19/60] | loss=4.8598 | acc=0.7014 | rec=0.7012 | f1=0.6817 | aucpr=0.6643 | aucroc=0.8003
+[<*>] Save model with tag acc at epoch 19 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 19 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 1090.54s | lr = 1e-05
+
+[-] TRAIN [20/60] | loss=4.8102 | acc=0.7249 | rec=0.7248 | f1=0.7079 | aucpr=0.6731 | aucroc=0.8009
+[-] VALIDATING [20/60] | loss=4.8485 | acc=0.6837 | rec=0.6834 | f1=0.6505 | aucpr=0.6629 | aucroc=0.7996
+[*] epoch time = 987.78s | lr = 1e-05
+
+[-] TRAIN [21/60] | loss=4.7690 | acc=0.7240 | rec=0.7239 | f1=0.7059 | aucpr=0.6748 | aucroc=0.8018
+[-] VALIDATING [21/60] | loss=4.7950 | acc=0.6974 | rec=0.6970 | f1=0.6678 | aucpr=0.6667 | aucroc=0.8007
+[*] epoch time = 943.74s | lr = 1e-05
+
+[-] TRAIN [22/60] | loss=4.7377 | acc=0.7299 | rec=0.7298 | f1=0.7118 | aucpr=0.6755 | aucroc=0.8014
+[-] VALIDATING [22/60] | loss=4.7647 | acc=0.6863 | rec=0.6859 | f1=0.6513 | aucpr=0.6692 | aucroc=0.8020
+[*] epoch time = 925.92s | lr = 1e-05
+
+[-] TRAIN [23/60] | loss=4.7097 | acc=0.7256 | rec=0.7255 | f1=0.7064 | aucpr=0.6780 | aucroc=0.8009
+[-] VALIDATING [23/60] | loss=4.7447 | acc=0.7138 | rec=0.7135 | f1=0.6952 | aucpr=0.6676 | aucroc=0.8029
+[<*>] Save model with tag acc at epoch 23 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 23 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 897.39s | lr = 1e-05
+
+[-] TRAIN [24/60] | loss=4.6832 | acc=0.7295 | rec=0.7294 | f1=0.7134 | aucpr=0.6776 | aucroc=0.8015
+[-] VALIDATING [24/60] | loss=4.7183 | acc=0.7092 | rec=0.7089 | f1=0.6879 | aucpr=0.6661 | aucroc=0.8014
+[*] epoch time = 896.36s | lr = 1e-05
+
+[-] TRAIN [25/60] | loss=4.6546 | acc=0.7352 | rec=0.7351 | f1=0.7175 | aucpr=0.6814 | aucroc=0.8026
+[-] VALIDATING [25/60] | loss=4.7135 | acc=0.6883 | rec=0.6879 | f1=0.6642 | aucpr=0.6651 | aucroc=0.7992
+[*] epoch time = 816.62s | lr = 1e-05
+
+[-] TRAIN [26/60] | loss=4.6341 | acc=0.7366 | rec=0.7365 | f1=0.7224 | aucpr=0.6790 | aucroc=0.8019
+[-] VALIDATING [26/60] | loss=4.6696 | acc=0.7151 | rec=0.7148 | f1=0.6983 | aucpr=0.6669 | aucroc=0.8027
+[<*>] Save model with tag acc at epoch 26 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_acc.pt
+[<*>] Save model with tag rec at epoch 26 at models/Affectnet-WM-RR/fan_fer/Mar22_07-56-10LAP13528s-MacBook-Pro.local/fan_fer_rec.pt
+[*] epoch time = 854.20s | lr = 1e-05
+
+[-] TRAIN [27/60] | loss=4.6089 | acc=0.7401 | rec=0.7400 | f1=0.7265 | aucpr=0.6815 | aucroc=0.8018
+[-] VALIDATING [27/60] | loss=4.6520 | acc=0.7046 | rec=0.7043 | f1=0.6867 | aucpr=0.6678 | aucroc=0.7995
+[*] epoch time = 899.72s | lr = 1e-05
+
+[-] TRAIN [28/60] | loss=4.5843 | acc=0.7365 | rec=0.7364 | f1=0.7231 | aucpr=0.6828 | aucroc=0.8031
+[-] VALIDATING [28/60] | loss=4.6285 | acc=0.6929 | rec=0.6925 | f1=0.6707 | aucpr=0.6673 | aucroc=0.8012
+[*] epoch time = 943.72s | lr = 1e-05
+
+[-] TRAIN [29/60] | loss=4.5594 | acc=0.7446 | rec=0.7445 | f1=0.7321 | aucpr=0.6839 | aucroc=0.8006
+[-] VALIDATING [29/60] | loss=4.6030 | acc=0.7112 | rec=0.7109 | f1=0.6982 | aucpr=0.6677 | aucroc=0.8025
+[*] epoch time = 937.99s | lr = 1e-05
+
+[-] TRAIN [30/60] | loss=4.5397 | acc=0.7384 | rec=0.7383 | f1=0.7262 | aucpr=0.6855 | aucroc=0.8020
+[-] VALIDATING [30/60] | loss=4.5886 | acc=0.7132 | rec=0.7128 | f1=0.6899 | aucpr=0.6692 | aucroc=0.8023
+[*] epoch time = 4240.00s | lr = 1e-05
+
+[-] TRAIN [31/60] | loss=4.5117 | acc=0.7463 | rec=0.7462 | f1=0.7342 | aucpr=0.6848 | aucroc=0.8006
+[-] VALIDATING [31/60] | loss=4.5833 | acc=0.6994 | rec=0.6991 | f1=0.6892 | aucpr=0.6626 | aucroc=0.7999
+[*] epoch time = 1005.88s | lr = 1e-05
+
+[-] TRAIN [32/60] | loss=4.4906 | acc=0.7472 | rec=0.7471 | f1=0.7365 | aucpr=0.6872 | aucroc=0.8008
+[-] VALIDATING [32/60] | loss=4.5501 | acc=0.6988 | rec=0.6984 | f1=0.6860 | aucpr=0.6694 | aucroc=0.8017
+[*] epoch time = 936.38s | lr = 1e-05
+
+[-] TRAIN [33/60] | loss=4.4647 | acc=0.7514 | rec=0.7513 | f1=0.7401 | aucpr=0.6877 | aucroc=0.8026
+[-] VALIDATING [33/60] | loss=4.5358 | acc=0.7105 | rec=0.7103 | f1=0.6958 | aucpr=0.6659 | aucroc=0.8001
+[*] epoch time = 1225.54s | lr = 1e-05
+
+[-] TRAIN [34/60] | loss=4.4497 | acc=0.7552 | rec=0.7551 | f1=0.7457 | aucpr=0.6901 | aucroc=0.8019
+[-] VALIDATING [34/60] | loss=4.5241 | acc=0.7020 | rec=0.7016 | f1=0.6824 | aucpr=0.6715 | aucroc=0.8025
+[*] epoch time = 1259.28s | lr = 1e-05
+
+[-] TRAIN [35/60] | loss=4.4340 | acc=0.7492 | rec=0.7491 | f1=0.7389 | aucpr=0.6879 | aucroc=0.8024
+[-] VALIDATING [35/60] | loss=4.5236 | acc=0.7007 | rec=0.7005 | f1=0.6916 | aucpr=0.6627 | aucroc=0.8004
+[*] epoch time = 1045.55s | lr = 1e-05
+
+[-] TRAIN [36/60] | loss=4.3767 | acc=0.7727 | rec=0.7726 | f1=0.7641 | aucpr=0.6963 | aucroc=0.8061
+[-] VALIDATING [36/60] | loss=4.4503 | acc=0.7112 | rec=0.7109 | f1=0.6973 | aucpr=0.6693 | aucroc=0.8033
+[*] epoch time = 2441.76s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [37/60] | loss=4.3404 | acc=0.7737 | rec=0.7736 | f1=0.7647 | aucpr=0.6978 | aucroc=0.8052
+[-] VALIDATING [37/60] | loss=4.4289 | acc=0.7073 | rec=0.7069 | f1=0.6925 | aucpr=0.6710 | aucroc=0.8039
+[*] epoch time = 1183.40s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [38/60] | loss=4.3196 | acc=0.7812 | rec=0.7811 | f1=0.7732 | aucpr=0.7006 | aucroc=0.8052
+[-] VALIDATING [38/60] | loss=4.4203 | acc=0.7092 | rec=0.7089 | f1=0.6949 | aucpr=0.6697 | aucroc=0.8036
+[*] epoch time = 877.71s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [39/60] | loss=4.3180 | acc=0.7721 | rec=0.7720 | f1=0.7635 | aucpr=0.6952 | aucroc=0.8053
+[-] VALIDATING [39/60] | loss=4.4148 | acc=0.7066 | rec=0.7063 | f1=0.6920 | aucpr=0.6700 | aucroc=0.8036
+[*] epoch time = 931.70s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [40/60] | loss=4.3065 | acc=0.7756 | rec=0.7755 | f1=0.7685 | aucpr=0.6991 | aucroc=0.8068
+[-] VALIDATING [40/60] | loss=4.4097 | acc=0.7105 | rec=0.7102 | f1=0.6968 | aucpr=0.6708 | aucroc=0.8040
+[*] epoch time = 857.31s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [41/60] | loss=4.3102 | acc=0.7727 | rec=0.7726 | f1=0.7639 | aucpr=0.6964 | aucroc=0.8047
+[-] VALIDATING [41/60] | loss=4.4070 | acc=0.7060 | rec=0.7056 | f1=0.6913 | aucpr=0.6693 | aucroc=0.8034
+[*] epoch time = 874.63s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [42/60] | loss=4.2962 | acc=0.7759 | rec=0.7758 | f1=0.7676 | aucpr=0.6998 | aucroc=0.8074
+[-] VALIDATING [42/60] | loss=4.4056 | acc=0.7105 | rec=0.7102 | f1=0.6996 | aucpr=0.6696 | aucroc=0.8036
+[*] epoch time = 863.58s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [43/60] | loss=4.2941 | acc=0.7744 | rec=0.7743 | f1=0.7659 | aucpr=0.7013 | aucroc=0.8056
+[-] VALIDATING [43/60] | loss=4.3999 | acc=0.7073 | rec=0.7070 | f1=0.6968 | aucpr=0.6697 | aucroc=0.8031
+[*] epoch time = 978.63s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [44/60] | loss=4.2881 | acc=0.7865 | rec=0.7864 | f1=0.7793 | aucpr=0.6999 | aucroc=0.8055
+[-] VALIDATING [44/60] | loss=4.3975 | acc=0.7073 | rec=0.7070 | f1=0.6938 | aucpr=0.6700 | aucroc=0.8033
+[*] epoch time = 1172.17s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [45/60] | loss=4.2907 | acc=0.7805 | rec=0.7804 | f1=0.7730 | aucpr=0.7017 | aucroc=0.8071
+[-] VALIDATING [45/60] | loss=4.4015 | acc=0.7086 | rec=0.7083 | f1=0.6971 | aucpr=0.6682 | aucroc=0.8024
+[*] epoch time = 1148.74s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [46/60] | loss=4.2866 | acc=0.7746 | rec=0.7746 | f1=0.7669 | aucpr=0.7003 | aucroc=0.8061
+[-] VALIDATING [46/60] | loss=4.3968 | acc=0.7073 | rec=0.7069 | f1=0.6926 | aucpr=0.6697 | aucroc=0.8029
+[*] epoch time = 1235.11s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [47/60] | loss=4.2855 | acc=0.7784 | rec=0.7783 | f1=0.7702 | aucpr=0.6990 | aucroc=0.8047
+[-] VALIDATING [47/60] | loss=4.3923 | acc=0.7073 | rec=0.7069 | f1=0.6976 | aucpr=0.6699 | aucroc=0.8036
+[*] epoch time = 1336.97s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [48/60] | loss=4.2754 | acc=0.7830 | rec=0.7829 | f1=0.7761 | aucpr=0.7030 | aucroc=0.8077
+[-] VALIDATING [48/60] | loss=4.3899 | acc=0.7033 | rec=0.7030 | f1=0.6900 | aucpr=0.6693 | aucroc=0.8033
+[*] epoch time = 1318.29s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [49/60] | loss=4.2782 | acc=0.7822 | rec=0.7821 | f1=0.7752 | aucpr=0.7011 | aucroc=0.8070
+[-] VALIDATING [49/60] | loss=4.3908 | acc=0.7053 | rec=0.7050 | f1=0.6952 | aucpr=0.6693 | aucroc=0.8025
+[*] epoch time = 1321.05s | lr = 1.0000000000000002e-06
+
+[-] TRAIN [50/60] | loss=4.2667 | acc=0.7832 | rec=0.7831 | f1=0.7764 | aucpr=0.7065 | aucroc=0.8078
+[-] VALIDATING [50/60] | loss=4.3859 | acc=0.7014 | rec=0.7011 | f1=0.6891 | aucpr=0.6691 | aucroc=0.8031
+[*] epoch time = 1088.99s | lr = 1.0000000000000002e-06
+
+[>] Best Valid -------------------------------------------------
+[+] acc=0.7151
+[+] rec=0.7148
+[+] f1=0.6996
+[+] aucpr=0.6715
+[+] aucroc=0.8040
+
+[*] Fini! -----------------------------------------------------
+[!] total time = 18:12:25.723431s

@@ -495,9 +495,9 @@ def main(input_feature: str, model_id: str, dataset: str):
     print(">> Loading optimizer, criterition, logger")
     # define optimizer
     # optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9) # Adam 
-    optimizer = optim.Adam(model.parameters(), lr=0.0001, weight_decay=0.0005)
+    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=0.0005)
     # scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, verbose=True, min_lr=0.00001)
-    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.1)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=15, gamma=0.1)
     # define criterion
     criterion = nn.CrossEntropyLoss()
     
