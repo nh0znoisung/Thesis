@@ -11,6 +11,7 @@ import torch.optim as optim
 
 from torch.utils.tensorboard import SummaryWriter
 import torch.backends.cudnn as cudnn
+from dan_utils import DAN
 
 
 # from sklearn.model_selection import KFold
@@ -193,7 +194,7 @@ class RandomFiveCrop(object):
 
 
 ### Global config
-num_epoch = 30
+num_epoch = 35
 ft_num_epoch = 5
 
 # define R1 and R2 regularization coefficients
@@ -222,6 +223,27 @@ img_size = 256 # ??? (320, 135) vs (368, 368) vs (240,240)
 #     transforms.Normalize(mean=[0.485, 0.456, 0.406],
 #                                     std=[0.229, 0.224, 0.225])
 # ])
+
+# For affectnet
+# data_transforms = transforms.Compose([
+#     transforms.Resize((224, 224)),
+#     transforms.RandomHorizontalFlip(),
+#     transforms.RandomApply([
+#         transforms.RandomAffine(20, scale=(0.8, 1), translate=(0.2, 0.2)),
+#     ], p=0.7),
+
+#     transforms.ToTensor(),
+#     transforms.Normalize(mean=[0.485, 0.456, 0.406],
+#                                 std=[0.229, 0.224, 0.225]),
+#     transforms.RandomErasing(),
+# ])
+
+# data_transforms_val = transforms.Compose([
+#     transforms.Resize((224, 224)),
+#     transforms.ToTensor(),
+#     transforms.Normalize(mean=[0.485, 0.456, 0.406],
+#                                 std=[0.229, 0.224, 0.225])])  
+
 normalize = transforms.Normalize(mean=[0.5752, 0.4495, 0.4012],
                                      std=[0.2086, 0.1911, 0.1827])
 
@@ -267,6 +289,11 @@ def unfreeze_model(model):
     for param in model.parameters():
         param.requires_grad = True
 
+def has_prefix(s, prefix_list):
+    for prefix in prefix_list:
+        if s.startswith(prefix):
+            return True
+    return False
 
 def train(train_loader, model, criterion, optimizer, epoch, num_epoch):
     y_pred, y_true, y_scores = [], [], []
@@ -469,6 +496,9 @@ def main(input_feature: str, model_id: str, dataset: str):
     if os.path.isfile(model_path):
       model = torch.load(model_path, map_location=device)
       print(f"Load model {model_path} with pre-trained weights with deivce")
+    elif model_name == "dan":
+        model = DAN().to(device)
+        print(f"Load model DAN with pre-trained resnet18_msceleb weights with deivce")
     else:
       try:
         model = torchvision.models.get_model(model_name, weights="IMAGENET1K_V2").to(device)
@@ -481,12 +511,29 @@ def main(input_feature: str, model_id: str, dataset: str):
           raise Exception("Cannot load the model")
 
     # Change model with new classifier
-    try:
-      model.fc = CustomClassifier(model.fc.in_features)
-      print("Change new classifier at fc layer")
-    except:
-      model.classifier = CustomClassifier(model.classifier[0].in_features)
-      print("Change new classifier at classifier layer")
+    if has_prefix(model_name, ["enet", "mobilenet_v3_large"]):
+        model.classifier = CustomClassifier(model.classifier[0].in_features)
+        print("Change new classifier at classifier layer")
+    elif has_prefix(model_name, ["fan_", "resnet", "inception_v3"]):
+        model.fc = CustomClassifier(model.fc.in_features)
+        print("Change new classifier at fc layer")
+    elif has_prefix(model_name, ["mnasnet"]):
+        model.classifier = CustomClassifier(model.classifier[1].in_features)
+        print("Change new classifier at classifier layer")
+    elif has_prefix(model_name, ["densenet"]):
+        model.classifier = CustomClassifier(model.classifier.in_features)
+        print("Change new classifier at classifier layer")
+    elif has_prefix(model_name, ["vit_"]):
+        model.heads = CustomClassifier(model.heads.head.in_features)
+        print("Change new classifier at head layer")
+    elif has_prefix(model_name, ["vgg"]): pass
+
+    # try:
+    #   model.fc = CustomClassifier(model.fc.in_features)
+    #   print("Change new classifier at fc layer")
+    # except:
+    #   model.classifier = CustomClassifier(model.classifier[0].in_features)
+    #   print("Change new classifier at classifier layer")
 
     
     
