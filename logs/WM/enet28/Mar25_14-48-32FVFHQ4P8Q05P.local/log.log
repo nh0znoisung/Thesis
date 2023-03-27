@@ -1,0 +1,202 @@
+>>>>    Running on input feature WM \ model name enet28 \ dataset Affectnet-WM-RR      >>>>>
+******************************************************
+>> Loading base dataset
+>> Loading model
+Load model pretrained_models/WM/enet28.pt with pre-trained weights with deivce
+Change new classifier at classifier layer
+>> Loading optimizer, criterition, logger
+[>] Begin Fine tuning ------------------------------------------
+----- Freeze base architecture for fine tuning ------
+[-] TRAIN [01/5] | loss=808.7696 | acc=0.5282 | rec=0.5281 | f1=0.4903 | aucpr=0.5355 | aucroc=0.7110
+[-] VALIDATING [01/5] | loss=808.5232 | acc=0.6149 | rec=0.6145 | f1=0.5844 | aucpr=0.6208 | aucroc=0.7718
+[<*>] Save model with tag acc at epoch 1 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 1 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 997.40s | lr = 0.001
+
+[-] TRAIN [02/5] | loss=808.5895 | acc=0.5669 | rec=0.5668 | f1=0.5453 | aucpr=0.5656 | aucroc=0.7367
+[-] VALIDATING [02/5] | loss=808.5315 | acc=0.6228 | rec=0.6225 | f1=0.5922 | aucpr=0.6249 | aucroc=0.7760
+[<*>] Save model with tag acc at epoch 2 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 2 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 999.97s | lr = 0.001
+
+[-] TRAIN [03/5] | loss=808.5620 | acc=0.5689 | rec=0.5687 | f1=0.5449 | aucpr=0.5739 | aucroc=0.7433
+[-] VALIDATING [03/5] | loss=808.4958 | acc=0.6267 | rec=0.6263 | f1=0.5960 | aucpr=0.6172 | aucroc=0.7708
+[<*>] Save model with tag acc at epoch 3 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 3 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 991.54s | lr = 0.001
+
+[-] TRAIN [04/5] | loss=808.5536 | acc=0.5777 | rec=0.5776 | f1=0.5625 | aucpr=0.5805 | aucroc=0.7479
+[-] VALIDATING [04/5] | loss=808.5485 | acc=0.5789 | rec=0.5789 | f1=0.5452 | aucpr=0.6320 | aucroc=0.7805
+[*] epoch time = 989.51s | lr = 0.001
+
+[-] TRAIN [05/5] | loss=808.5357 | acc=0.5971 | rec=0.5970 | f1=0.5831 | aucpr=0.5922 | aucroc=0.7566
+[-] VALIDATING [05/5] | loss=808.4758 | acc=0.6431 | rec=0.6426 | f1=0.6317 | aucpr=0.6593 | aucroc=0.7941
+[<*>] Save model with tag acc at epoch 5 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 5 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 990.47s | lr = 0.001
+
+[>] Begin Training ---------------------------------------------
+----- Unfreeze whole architecture for fine tuning ------
+[-] TRAIN [01/35] | loss=368.9846 | acc=0.6569 | rec=0.6568 | f1=0.6437 | aucpr=0.6266 | aucroc=0.7696
+[-] VALIDATING [01/35] | loss=153.5026 | acc=0.5645 | rec=0.5647 | f1=0.5701 | aucpr=0.6147 | aucroc=0.7575
+[*] epoch time = 4243.87s | lr = 0.001
+
+[-] TRAIN [02/35] | loss=114.9558 | acc=0.6421 | rec=0.6420 | f1=0.6185 | aucpr=0.6050 | aucroc=0.7396
+[-] VALIDATING [02/35] | loss=93.5024 | acc=0.5324 | rec=0.5321 | f1=0.5047 | aucpr=0.5849 | aucroc=0.7395
+[*] epoch time = 4407.64s | lr = 0.001
+
+[-] TRAIN [03/35] | loss=83.2792 | acc=0.6341 | rec=0.6340 | f1=0.6043 | aucpr=0.5942 | aucroc=0.7309
+[-] VALIDATING [03/35] | loss=74.9493 | acc=0.4152 | rec=0.4158 | f1=0.3499 | aucpr=0.6032 | aucroc=0.7447
+[*] epoch time = 4271.24s | lr = 0.001
+
+[-] TRAIN [04/35] | loss=68.2659 | acc=0.6397 | rec=0.6396 | f1=0.6089 | aucpr=0.5947 | aucroc=0.7288
+[-] VALIDATING [04/35] | loss=62.3198 | acc=0.5868 | rec=0.5871 | f1=0.5892 | aucpr=0.6356 | aucroc=0.7610
+[*] epoch time = 4274.17s | lr = 0.001
+
+[-] TRAIN [05/35] | loss=57.2839 | acc=0.6519 | rec=0.6518 | f1=0.6158 | aucpr=0.6023 | aucroc=0.7374
+[-] VALIDATING [05/35] | loss=52.5260 | acc=0.6667 | rec=0.6667 | f1=0.6550 | aucpr=0.6150 | aucroc=0.7378
+[<*>] Save model with tag acc at epoch 5 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 5 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 4275.10s | lr = 0.001
+
+[-] TRAIN [06/35] | loss=48.4981 | acc=0.6509 | rec=0.6508 | f1=0.6195 | aucpr=0.6014 | aucroc=0.7419
+[-] VALIDATING [06/35] | loss=44.5929 | acc=0.6647 | rec=0.6643 | f1=0.6541 | aucpr=0.6246 | aucroc=0.7410
+[*] epoch time = 4268.05s | lr = 0.001
+
+[-] TRAIN [07/35] | loss=41.1368 | acc=0.6706 | rec=0.6705 | f1=0.6408 | aucpr=0.6132 | aucroc=0.7528
+[-] VALIDATING [07/35] | loss=37.8550 | acc=0.7020 | rec=0.7018 | f1=0.6758 | aucpr=0.6382 | aucroc=0.7607
+[<*>] Save model with tag acc at epoch 7 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 7 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 4287.54s | lr = 0.001
+
+[-] TRAIN [08/35] | loss=35.0996 | acc=0.6705 | rec=0.6704 | f1=0.6381 | aucpr=0.6193 | aucroc=0.7618
+[-] VALIDATING [08/35] | loss=32.5147 | acc=0.6149 | rec=0.6151 | f1=0.6253 | aucpr=0.6940 | aucroc=0.7941
+[*] epoch time = 4292.09s | lr = 0.001
+
+[-] TRAIN [09/35] | loss=30.1203 | acc=0.6748 | rec=0.6747 | f1=0.6460 | aucpr=0.6272 | aucroc=0.7662
+[-] VALIDATING [09/35] | loss=28.2193 | acc=0.5200 | rec=0.5201 | f1=0.4683 | aucpr=0.6159 | aucroc=0.7686
+[*] epoch time = 4303.83s | lr = 0.001
+
+[-] TRAIN [10/35] | loss=26.0564 | acc=0.6741 | rec=0.6740 | f1=0.6414 | aucpr=0.6197 | aucroc=0.7606
+[-] VALIDATING [10/35] | loss=24.2816 | acc=0.6902 | rec=0.6902 | f1=0.6738 | aucpr=0.6406 | aucroc=0.7758
+[*] epoch time = 4255.02s | lr = 0.001
+
+[-] TRAIN [11/35] | loss=23.3469 | acc=0.7053 | rec=0.7052 | f1=0.6790 | aucpr=0.6460 | aucroc=0.7755
+[-] VALIDATING [11/35] | loss=23.1118 | acc=0.7210 | rec=0.7207 | f1=0.6863 | aucpr=0.6753 | aucroc=0.7929
+[<*>] Save model with tag acc at epoch 11 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 11 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 4291.20s | lr = 0.0001
+
+[-] TRAIN [12/35] | loss=22.9632 | acc=0.7064 | rec=0.7063 | f1=0.6775 | aucpr=0.6460 | aucroc=0.7770
+[-] VALIDATING [12/35] | loss=22.7719 | acc=0.7184 | rec=0.7181 | f1=0.6833 | aucpr=0.6643 | aucroc=0.7881
+[*] epoch time = 4270.09s | lr = 0.0001
+
+[-] TRAIN [13/35] | loss=22.6105 | acc=0.7158 | rec=0.7157 | f1=0.6900 | aucpr=0.6558 | aucroc=0.7798
+[-] VALIDATING [13/35] | loss=22.4175 | acc=0.7210 | rec=0.7207 | f1=0.6860 | aucpr=0.6656 | aucroc=0.7904
+[<*>] Save model with tag acc at epoch 13 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 13 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 4264.62s | lr = 0.0001
+
+[-] TRAIN [14/35] | loss=22.2697 | acc=0.7151 | rec=0.7150 | f1=0.6910 | aucpr=0.6548 | aucroc=0.7809
+[-] VALIDATING [14/35] | loss=22.0788 | acc=0.7164 | rec=0.7161 | f1=0.6854 | aucpr=0.6723 | aucroc=0.7982
+[*] epoch time = 4452.97s | lr = 0.0001
+
+[-] TRAIN [15/35] | loss=21.9224 | acc=0.7222 | rec=0.7221 | f1=0.6977 | aucpr=0.6628 | aucroc=0.7801
+[-] VALIDATING [15/35] | loss=21.7475 | acc=0.7197 | rec=0.7194 | f1=0.6887 | aucpr=0.6788 | aucroc=0.7932
+[*] epoch time = 4318.58s | lr = 0.0001
+
+[-] TRAIN [16/35] | loss=21.5869 | acc=0.7191 | rec=0.7191 | f1=0.6949 | aucpr=0.6628 | aucroc=0.7844
+[-] VALIDATING [16/35] | loss=21.4197 | acc=0.7243 | rec=0.7240 | f1=0.6977 | aucpr=0.6785 | aucroc=0.7950
+[<*>] Save model with tag acc at epoch 16 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 16 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 4343.81s | lr = 0.0001
+
+[-] TRAIN [17/35] | loss=21.2593 | acc=0.7198 | rec=0.7198 | f1=0.6962 | aucpr=0.6594 | aucroc=0.7805
+[-] VALIDATING [17/35] | loss=21.0769 | acc=0.7217 | rec=0.7214 | f1=0.6920 | aucpr=0.6779 | aucroc=0.7977
+[*] epoch time = 4332.26s | lr = 0.0001
+
+[-] TRAIN [18/35] | loss=20.9364 | acc=0.7191 | rec=0.7191 | f1=0.6964 | aucpr=0.6601 | aucroc=0.7795
+[-] VALIDATING [18/35] | loss=20.7621 | acc=0.7243 | rec=0.7240 | f1=0.6908 | aucpr=0.6709 | aucroc=0.7908
+[*] epoch time = 4354.93s | lr = 0.0001
+
+[-] TRAIN [19/35] | loss=20.6114 | acc=0.7205 | rec=0.7205 | f1=0.6969 | aucpr=0.6588 | aucroc=0.7807
+[-] VALIDATING [19/35] | loss=20.4494 | acc=0.7204 | rec=0.7200 | f1=0.6889 | aucpr=0.6654 | aucroc=0.7839
+[*] epoch time = 4508.72s | lr = 0.0001
+
+[-] TRAIN [20/35] | loss=20.2938 | acc=0.7268 | rec=0.7268 | f1=0.7051 | aucpr=0.6615 | aucroc=0.7826
+[-] VALIDATING [20/35] | loss=20.1316 | acc=0.7282 | rec=0.7279 | f1=0.7010 | aucpr=0.6678 | aucroc=0.7900
+[<*>] Save model with tag acc at epoch 20 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[<*>] Save model with tag rec at epoch 20 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_rec.pt
+[*] epoch time = 8440.15s | lr = 0.0001
+
+[-] TRAIN [21/35] | loss=19.9890 | acc=0.7197 | rec=0.7196 | f1=0.6975 | aucpr=0.6613 | aucroc=0.7833
+[-] VALIDATING [21/35] | loss=19.8324 | acc=0.7250 | rec=0.7246 | f1=0.6976 | aucpr=0.6828 | aucroc=0.8025
+[*] epoch time = 4236.96s | lr = 0.0001
+
+[-] TRAIN [22/35] | loss=19.6826 | acc=0.7265 | rec=0.7265 | f1=0.7035 | aucpr=0.6625 | aucroc=0.7843
+[-] VALIDATING [22/35] | loss=19.5206 | acc=0.7236 | rec=0.7234 | f1=0.6974 | aucpr=0.6903 | aucroc=0.7987
+[*] epoch time = 4263.41s | lr = 0.0001
+
+[-] TRAIN [23/35] | loss=19.3900 | acc=0.7165 | rec=0.7164 | f1=0.6955 | aucpr=0.6629 | aucroc=0.7816
+[-] VALIDATING [23/35] | loss=19.2281 | acc=0.7250 | rec=0.7247 | f1=0.6999 | aucpr=0.6757 | aucroc=0.7914
+[*] epoch time = 4285.20s | lr = 0.0001
+
+[-] TRAIN [24/35] | loss=19.0984 | acc=0.7277 | rec=0.7276 | f1=0.7069 | aucpr=0.6623 | aucroc=0.7819
+[-] VALIDATING [24/35] | loss=18.9447 | acc=0.7236 | rec=0.7233 | f1=0.6955 | aucpr=0.6824 | aucroc=0.8003
+[*] epoch time = 4290.23s | lr = 0.0001
+
+[-] TRAIN [25/35] | loss=18.8067 | acc=0.7298 | rec=0.7297 | f1=0.7086 | aucpr=0.6677 | aucroc=0.7866
+[-] VALIDATING [25/35] | loss=18.6776 | acc=0.7282 | rec=0.7279 | f1=0.6967 | aucpr=0.6755 | aucroc=0.7941
+[<*>] Save model with tag acc at epoch 25 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[*] epoch time = 4311.85s | lr = 0.0001
+
+[-] TRAIN [26/35] | loss=18.5739 | acc=0.7284 | rec=0.7283 | f1=0.7061 | aucpr=0.6692 | aucroc=0.7863
+[-] VALIDATING [26/35] | loss=18.5599 | acc=0.7243 | rec=0.7240 | f1=0.6974 | aucpr=0.6876 | aucroc=0.7975
+[*] epoch time = 4292.21s | lr = 1e-05
+
+[-] TRAIN [27/35] | loss=18.5435 | acc=0.7305 | rec=0.7304 | f1=0.7088 | aucpr=0.6677 | aucroc=0.7838
+[-] VALIDATING [27/35] | loss=18.5330 | acc=0.7282 | rec=0.7279 | f1=0.6985 | aucpr=0.6773 | aucroc=0.7948
+[<*>] Save model with tag acc at epoch 27 at models/Affectnet-WM-RR/enet28/Mar25_14-48-32FVFHQ4P8Q05P.local/enet28_acc.pt
+[*] epoch time = 4284.15s | lr = 1e-05
+
+[-] TRAIN [28/35] | loss=18.5173 | acc=0.7312 | rec=0.7311 | f1=0.7117 | aucpr=0.6671 | aucroc=0.7875
+[-] VALIDATING [28/35] | loss=18.4997 | acc=0.7243 | rec=0.7240 | f1=0.6983 | aucpr=0.6842 | aucroc=0.8010
+[*] epoch time = 4314.61s | lr = 1e-05
+
+[-] TRAIN [29/35] | loss=18.4882 | acc=0.7288 | rec=0.7287 | f1=0.7075 | aucpr=0.6704 | aucroc=0.7863
+[-] VALIDATING [29/35] | loss=18.4710 | acc=0.7250 | rec=0.7247 | f1=0.6988 | aucpr=0.6822 | aucroc=0.8019
+[*] epoch time = 4260.14s | lr = 1e-05
+
+[-] TRAIN [30/35] | loss=18.4569 | acc=0.7307 | rec=0.7307 | f1=0.7108 | aucpr=0.6715 | aucroc=0.7892
+[-] VALIDATING [30/35] | loss=18.4488 | acc=0.7282 | rec=0.7279 | f1=0.6980 | aucpr=0.6749 | aucroc=0.7941
+[*] epoch time = 4264.25s | lr = 1e-05
+
+[-] TRAIN [31/35] | loss=18.4240 | acc=0.7404 | rec=0.7403 | f1=0.7199 | aucpr=0.6704 | aucroc=0.7868
+[-] VALIDATING [31/35] | loss=18.4188 | acc=0.7263 | rec=0.7260 | f1=0.6988 | aucpr=0.6813 | aucroc=0.7987
+[*] epoch time = 4255.70s | lr = 1e-05
+
+[-] TRAIN [32/35] | loss=18.3932 | acc=0.7333 | rec=0.7332 | f1=0.7144 | aucpr=0.6757 | aucroc=0.7881
+[-] VALIDATING [32/35] | loss=18.3918 | acc=0.7256 | rec=0.7253 | f1=0.6958 | aucpr=0.6812 | aucroc=0.7968
+[*] epoch time = 4278.95s | lr = 1e-05
+
+[-] TRAIN [33/35] | loss=18.3679 | acc=0.7319 | rec=0.7318 | f1=0.7114 | aucpr=0.6705 | aucroc=0.7881
+[-] VALIDATING [33/35] | loss=18.3646 | acc=0.7250 | rec=0.7247 | f1=0.6952 | aucpr=0.6828 | aucroc=0.7982
+[*] epoch time = 4293.70s | lr = 1e-05
+
+[-] TRAIN [34/35] | loss=18.3430 | acc=0.7316 | rec=0.7315 | f1=0.7118 | aucpr=0.6709 | aucroc=0.7919
+[-] VALIDATING [34/35] | loss=18.3416 | acc=0.7263 | rec=0.7259 | f1=0.6948 | aucpr=0.6746 | aucroc=0.7918
+[*] epoch time = 4449.91s | lr = 1e-05
+
+[-] TRAIN [35/35] | loss=18.3029 | acc=0.7369 | rec=0.7368 | f1=0.7167 | aucpr=0.6775 | aucroc=0.7881
+[-] VALIDATING [35/35] | loss=18.3125 | acc=0.7276 | rec=0.7273 | f1=0.6999 | aucpr=0.6886 | aucroc=0.7976
+[*] epoch time = 4356.14s | lr = 1e-05
+
+[>] Best Valid -------------------------------------------------
+[+] acc=0.7282
+[+] rec=0.7279
+[+] f1=0.7010
+[+] aucpr=0.6940
+[+] aucroc=0.8025
+
+[*] Fini! -----------------------------------------------------
+[!] total time = 1 day, 20:24:22.386685s
