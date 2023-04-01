@@ -1,0 +1,47 @@
+>>>>    Running on input feature TH \ model name vit_b_16 \ dataset Affectnet-TH-RR      >>>>>
+******************************************************
+>> Loading base dataset
+>> Loading model
+Load model vit_b_16 with IMAGENET1K_V1 pre-trained weights with device
+Change new classifier at head layer
+>> Loading optimizer, criterition, logger
+[>] Begin Fine tuning ------------------------------------------
+----- Freeze base architecture for fine tuning ------
+[-] TRAIN [01/5] | loss=1825.6855 | acc=0.5829 | rec=0.5827 | f1=0.5555 | aucpr=0.5621 | aucroc=0.7384
+[-] VALIDATING [01/5] | loss=1825.5338 | acc=0.5922 | rec=0.5922 | f1=0.5557 | aucpr=0.6136 | aucroc=0.7734
+[<*>] Save model with tag acc at epoch 1 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 1 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 647.48s | lr = 0.001
+
+[-] TRAIN [02/5] | loss=1825.4549 | acc=0.6146 | rec=0.6144 | f1=0.5769 | aucpr=0.5868 | aucroc=0.7559
+[-] VALIDATING [02/5] | loss=1825.4033 | acc=0.6398 | rec=0.6397 | f1=0.5870 | aucpr=0.6219 | aucroc=0.7754
+[<*>] Save model with tag acc at epoch 2 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 2 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 622.26s | lr = 0.001
+
+[-] TRAIN [03/5] | loss=1825.4103 | acc=0.6301 | rec=0.6299 | f1=0.5936 | aucpr=0.5943 | aucroc=0.7593
+[-] VALIDATING [03/5] | loss=1825.3834 | acc=0.6551 | rec=0.6550 | f1=0.6236 | aucpr=0.6254 | aucroc=0.7671
+[<*>] Save model with tag acc at epoch 3 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 3 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 629.50s | lr = 0.001
+
+[-] TRAIN [04/5] | loss=1825.3959 | acc=0.6213 | rec=0.6212 | f1=0.5831 | aucpr=0.5918 | aucroc=0.7541
+[-] VALIDATING [04/5] | loss=1825.3938 | acc=0.6358 | rec=0.6357 | f1=0.5968 | aucpr=0.6177 | aucroc=0.7666
+[*] epoch time = 586.71s | lr = 0.001
+
+[-] TRAIN [05/5] | loss=1825.3824 | acc=0.6323 | rec=0.6321 | f1=0.5955 | aucpr=0.5967 | aucroc=0.7577
+[-] VALIDATING [05/5] | loss=1825.3229 | acc=0.6568 | rec=0.6566 | f1=0.6107 | aucpr=0.6342 | aucroc=0.7767
+[<*>] Save model with tag acc at epoch 5 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 5 at models/Affectnet-TH-RR/vit_b_16/Mar25_20-46-062c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 585.42s | lr = 0.001
+
+[>] Begin Training ---------------------------------------------
+----- Unfreeze whole architecture for fine tuning ------
+[-] TRAIN [01/35] | loss=192.8588 | acc=0.3326 | rec=0.3328 | f1=0.1890 | aucpr=0.3334 | aucroc=0.4984
+[-] VALIDATING [01/35] | loss=15.5724 | acc=0.3330 | rec=0.3333 | f1=0.1665 | aucpr=0.2915 | aucroc=0.4325
+[*] epoch time = 574.47s | lr = 0.001
+
+[-] TRAIN [02/35] | loss=13.8766 | acc=0.3243 | rec=0.3243 | f1=0.3223 | aucpr=0.3303 | aucroc=0.4961
+[-] VALIDATING [02/35] | loss=12.5923 | acc=0.3330 | rec=0.3333 | f1=0.1665 | aucpr=0.3774 | aucroc=0.5506
+[*] epoch time = 616.81s | lr = 0.001
+

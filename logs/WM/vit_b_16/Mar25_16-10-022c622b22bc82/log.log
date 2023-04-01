@@ -1,0 +1,188 @@
+>>>>    Running on input feature WM \ model name vit_b_16 \ dataset Affectnet-WM-RR      >>>>>
+******************************************************
+>> Loading base dataset
+>> Loading model
+Load model vit_b_16 with IMAGENET1K_V1 pre-trained weights with device
+Change new classifier at head layer
+>> Loading optimizer, criterition, logger
+[>] Begin Fine tuning ------------------------------------------
+----- Freeze base architecture for fine tuning ------
+[-] TRAIN [01/5] | loss=1825.7731 | acc=0.5045 | rec=0.5044 | f1=0.4795 | aucpr=0.5001 | aucroc=0.6709
+[-] VALIDATING [01/5] | loss=1825.5291 | acc=0.5632 | rec=0.5624 | f1=0.5130 | aucpr=0.5756 | aucroc=0.7285
+[<*>] Save model with tag acc at epoch 1 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 1 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 94.12s | lr = 0.001
+
+[-] TRAIN [02/5] | loss=1825.5270 | acc=0.5655 | rec=0.5654 | f1=0.5327 | aucpr=0.5414 | aucroc=0.7149
+[-] VALIDATING [02/5] | loss=1825.4558 | acc=0.5900 | rec=0.5897 | f1=0.5236 | aucpr=0.5934 | aucroc=0.7520
+[<*>] Save model with tag acc at epoch 2 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 2 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 95.35s | lr = 0.001
+
+[-] TRAIN [03/5] | loss=1825.4866 | acc=0.5740 | rec=0.5739 | f1=0.5394 | aucpr=0.5527 | aucroc=0.7238
+[-] VALIDATING [03/5] | loss=1825.4025 | acc=0.6005 | rec=0.6001 | f1=0.5700 | aucpr=0.5940 | aucroc=0.7491
+[<*>] Save model with tag acc at epoch 3 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 3 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 95.06s | lr = 0.001
+
+[-] TRAIN [04/5] | loss=1825.4770 | acc=0.5754 | rec=0.5753 | f1=0.5445 | aucpr=0.5562 | aucroc=0.7251
+[-] VALIDATING [04/5] | loss=1825.4009 | acc=0.6162 | rec=0.6159 | f1=0.5762 | aucpr=0.5964 | aucroc=0.7504
+[<*>] Save model with tag acc at epoch 4 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_acc.pt
+[<*>] Save model with tag rec at epoch 4 at models/Affectnet-WM-RR/vit_b_16/Mar25_16-10-022c622b22bc82/vit_b_16_rec.pt
+[*] epoch time = 93.98s | lr = 0.001
+
+[-] TRAIN [05/5] | loss=1825.4631 | acc=0.5859 | rec=0.5858 | f1=0.5538 | aucpr=0.5561 | aucroc=0.7273
+[-] VALIDATING [05/5] | loss=1825.3840 | acc=0.6130 | rec=0.6125 | f1=0.5666 | aucpr=0.5947 | aucroc=0.7488
+[*] epoch time = 91.62s | lr = 0.001
+
+[>] Begin Training ---------------------------------------------
+----- Unfreeze whole architecture for fine tuning ------
+[-] TRAIN [01/35] | loss=214.1483 | acc=0.3357 | rec=0.3358 | f1=0.1985 | aucpr=0.3322 | aucroc=0.4946
+[-] VALIDATING [01/35] | loss=16.1599 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3165 | aucroc=0.4691
+[*] epoch time = 128.85s | lr = 0.001
+
+[-] TRAIN [02/35] | loss=14.4246 | acc=0.3298 | rec=0.3299 | f1=0.2858 | aucpr=0.3292 | aucroc=0.4944
+[-] VALIDATING [02/35] | loss=13.1375 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3684 | aucroc=0.5470
+[*] epoch time = 130.15s | lr = 0.001
+
+[-] TRAIN [03/35] | loss=12.3502 | acc=0.3316 | rec=0.3313 | f1=0.2330 | aucpr=0.3296 | aucroc=0.4941
+[-] VALIDATING [03/35] | loss=11.8108 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3269 | aucroc=0.4807
+[*] epoch time = 128.36s | lr = 0.001
+
+[-] TRAIN [04/35] | loss=11.5544 | acc=0.3301 | rec=0.3300 | f1=0.3197 | aucpr=0.3251 | aucroc=0.4903
+[-] VALIDATING [04/35] | loss=11.3879 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 129.83s | lr = 0.001
+
+[-] TRAIN [05/35] | loss=11.5017 | acc=0.3369 | rec=0.3366 | f1=0.1836 | aucpr=0.3297 | aucroc=0.4927
+[-] VALIDATING [05/35] | loss=11.5347 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3162 | aucroc=0.4630
+[*] epoch time = 125.21s | lr = 0.001
+
+[-] TRAIN [06/35] | loss=11.5997 | acc=0.3327 | rec=0.3326 | f1=0.2796 | aucpr=0.3305 | aucroc=0.4972
+[-] VALIDATING [06/35] | loss=11.6026 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3206 | aucroc=0.4735
+[*] epoch time = 125.12s | lr = 0.001
+
+[-] TRAIN [07/35] | loss=11.6106 | acc=0.3194 | rec=0.3195 | f1=0.3011 | aucpr=0.3234 | aucroc=0.4874
+[-] VALIDATING [07/35] | loss=11.5636 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3241 | aucroc=0.4804
+[*] epoch time = 125.37s | lr = 0.001
+
+[-] TRAIN [08/35] | loss=11.6100 | acc=0.3228 | rec=0.3228 | f1=0.3038 | aucpr=0.3253 | aucroc=0.4932
+[-] VALIDATING [08/35] | loss=11.6245 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.89s | lr = 0.001
+
+[-] TRAIN [09/35] | loss=11.6118 | acc=0.3306 | rec=0.3305 | f1=0.2973 | aucpr=0.3290 | aucroc=0.4939
+[-] VALIDATING [09/35] | loss=11.6110 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.23s | lr = 0.001
+
+[-] TRAIN [10/35] | loss=11.6111 | acc=0.3313 | rec=0.3313 | f1=0.2765 | aucpr=0.3268 | aucroc=0.4934
+[-] VALIDATING [10/35] | loss=11.5225 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.31s | lr = 0.001
+
+[-] TRAIN [11/35] | loss=2.5242 | acc=0.3331 | rec=0.3333 | f1=0.1666 | aucpr=0.3253 | aucroc=0.4884
+[-] VALIDATING [11/35] | loss=2.1262 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.48s | lr = 0.0001
+
+[-] TRAIN [12/35] | loss=2.0640 | acc=0.3331 | rec=0.3333 | f1=0.1666 | aucpr=0.3246 | aucroc=0.4871
+[-] VALIDATING [12/35] | loss=2.0962 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.01s | lr = 0.0001
+
+[-] TRAIN [13/35] | loss=2.0606 | acc=0.3331 | rec=0.3333 | f1=0.1666 | aucpr=0.3218 | aucroc=0.4847
+[-] VALIDATING [13/35] | loss=1.9221 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.34s | lr = 0.0001
+
+[-] TRAIN [14/35] | loss=2.0784 | acc=0.3331 | rec=0.3333 | f1=0.1666 | aucpr=0.3223 | aucroc=0.4853
+[-] VALIDATING [14/35] | loss=2.0850 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.29s | lr = 0.0001
+
+[-] TRAIN [15/35] | loss=2.0880 | acc=0.3276 | rec=0.3276 | f1=0.3128 | aucpr=0.3272 | aucroc=0.4925
+[-] VALIDATING [15/35] | loss=2.1051 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.15s | lr = 0.0001
+
+[-] TRAIN [16/35] | loss=2.0870 | acc=0.3331 | rec=0.3333 | f1=0.1666 | aucpr=0.3197 | aucroc=0.4818
+[-] VALIDATING [16/35] | loss=2.1357 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 127.78s | lr = 0.0001
+
+[-] TRAIN [17/35] | loss=2.0902 | acc=0.3273 | rec=0.3274 | f1=0.2924 | aucpr=0.3251 | aucroc=0.4908
+[-] VALIDATING [17/35] | loss=2.0803 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 127.13s | lr = 0.0001
+
+[-] TRAIN [18/35] | loss=2.0874 | acc=0.3276 | rec=0.3275 | f1=0.2620 | aucpr=0.3218 | aucroc=0.4871
+[-] VALIDATING [18/35] | loss=1.9950 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 127.27s | lr = 0.0001
+
+[-] TRAIN [19/35] | loss=2.0886 | acc=0.3281 | rec=0.3279 | f1=0.2475 | aucpr=0.3189 | aucroc=0.4800
+[-] VALIDATING [19/35] | loss=2.0624 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 127.29s | lr = 0.0001
+
+[-] TRAIN [20/35] | loss=2.0867 | acc=0.3160 | rec=0.3161 | f1=0.2816 | aucpr=0.3171 | aucroc=0.4765
+[-] VALIDATING [20/35] | loss=2.1138 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 127.16s | lr = 0.0001
+
+[-] TRAIN [21/35] | loss=2.0876 | acc=0.3229 | rec=0.3229 | f1=0.2983 | aucpr=0.3232 | aucroc=0.4872
+[-] VALIDATING [21/35] | loss=2.2301 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 129.14s | lr = 0.0001
+
+[-] TRAIN [22/35] | loss=2.0884 | acc=0.3242 | rec=0.3241 | f1=0.3135 | aucpr=0.3238 | aucroc=0.4876
+[-] VALIDATING [22/35] | loss=1.9507 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.61s | lr = 0.0001
+
+[-] TRAIN [23/35] | loss=2.0871 | acc=0.3284 | rec=0.3284 | f1=0.2945 | aucpr=0.3227 | aucroc=0.4874
+[-] VALIDATING [23/35] | loss=2.0407 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.62s | lr = 0.0001
+
+[-] TRAIN [24/35] | loss=2.0879 | acc=0.3207 | rec=0.3207 | f1=0.3191 | aucpr=0.3218 | aucroc=0.4851
+[-] VALIDATING [24/35] | loss=2.0805 | acc=0.3346 | rec=0.3333 | f1=0.1672 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 144.78s | lr = 0.0001
+
+[-] TRAIN [25/35] | loss=2.0859 | acc=0.3248 | rec=0.3245 | f1=0.2516 | aucpr=0.3231 | aucroc=0.4888
+[-] VALIDATING [25/35] | loss=2.1360 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.01s | lr = 0.0001
+
+[-] TRAIN [26/35] | loss=1.2489 | acc=0.3278 | rec=0.3280 | f1=0.2588 | aucpr=0.3227 | aucroc=0.4870
+[-] VALIDATING [26/35] | loss=1.2061 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.05s | lr = 1e-05
+
+[-] TRAIN [27/35] | loss=1.2056 | acc=0.3287 | rec=0.3289 | f1=0.2625 | aucpr=0.3272 | aucroc=0.4917
+[-] VALIDATING [27/35] | loss=1.2051 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 124.86s | lr = 1e-05
+
+[-] TRAIN [28/35] | loss=1.2011 | acc=0.3294 | rec=0.3296 | f1=0.2631 | aucpr=0.3241 | aucroc=0.4887
+[-] VALIDATING [28/35] | loss=1.1857 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 124.87s | lr = 1e-05
+
+[-] TRAIN [29/35] | loss=1.2021 | acc=0.3277 | rec=0.3279 | f1=0.2216 | aucpr=0.3230 | aucroc=0.4881
+[-] VALIDATING [29/35] | loss=1.2026 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.15s | lr = 1e-05
+
+[-] TRAIN [30/35] | loss=1.2027 | acc=0.3304 | rec=0.3302 | f1=0.2983 | aucpr=0.3250 | aucroc=0.4893
+[-] VALIDATING [30/35] | loss=1.2043 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 125.07s | lr = 1e-05
+
+[-] TRAIN [31/35] | loss=1.2025 | acc=0.3280 | rec=0.3279 | f1=0.3167 | aucpr=0.3215 | aucroc=0.4865
+[-] VALIDATING [31/35] | loss=1.2074 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 124.88s | lr = 1e-05
+
+[-] TRAIN [32/35] | loss=1.2028 | acc=0.3246 | rec=0.3245 | f1=0.3111 | aucpr=0.3250 | aucroc=0.4888
+[-] VALIDATING [32/35] | loss=1.1916 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 135.16s | lr = 1e-05
+
+[-] TRAIN [33/35] | loss=1.2024 | acc=0.3227 | rec=0.3228 | f1=0.2837 | aucpr=0.3205 | aucroc=0.4839
+[-] VALIDATING [33/35] | loss=1.1877 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 151.57s | lr = 1e-05
+
+[-] TRAIN [34/35] | loss=1.2025 | acc=0.3256 | rec=0.3254 | f1=0.2532 | aucpr=0.3249 | aucroc=0.4895
+[-] VALIDATING [34/35] | loss=1.2008 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 150.44s | lr = 1e-05
+
+[-] TRAIN [35/35] | loss=1.2024 | acc=0.3273 | rec=0.3274 | f1=0.2970 | aucpr=0.3240 | aucroc=0.4885
+[-] VALIDATING [35/35] | loss=1.2062 | acc=0.3327 | rec=0.3333 | f1=0.1664 | aucpr=0.3333 | aucroc=0.5000
+[*] epoch time = 150.22s | lr = 1e-05
+
+[>] Best Valid -------------------------------------------------
+[+] acc=0.6162
+[+] rec=0.6159
+[+] f1=0.5762
+[+] aucpr=0.5964
+[+] aucroc=0.7520
+
+[*] Fini! -----------------------------------------------------
+[!] total time = 1:23:11.772688s
