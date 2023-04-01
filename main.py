@@ -11,7 +11,7 @@ import torch.optim as optim
 
 from torch.utils.tensorboard import SummaryWriter
 import torch.backends.cudnn as cudnn
-from dan_utils import DAN
+# from dan_utils import DAN, AffinityLoss, PartitionLoss
 
 
 # from sklearn.model_selection import KFold
@@ -225,42 +225,42 @@ img_size = 256 # ??? (320, 135) vs (368, 368) vs (240,240)
 # ])
 
 # For affectnet
-# data_transforms = transforms.Compose([
-#     transforms.Resize((224, 224)),
-#     transforms.RandomHorizontalFlip(),
-#     transforms.RandomApply([
-#         transforms.RandomAffine(20, scale=(0.8, 1), translate=(0.2, 0.2)),
-#     ], p=0.7),
+train_transformations = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.RandomHorizontalFlip(),
+    transforms.RandomApply([
+        transforms.RandomAffine(20, scale=(0.8, 1), translate=(0.2, 0.2)),
+    ], p=0.7),
 
-#     transforms.ToTensor(),
-#     transforms.Normalize(mean=[0.485, 0.456, 0.406],
-#                                 std=[0.229, 0.224, 0.225]),
-#     transforms.RandomErasing(),
-# ])
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                std=[0.229, 0.224, 0.225]),
+    transforms.RandomErasing(),
+])
 
-# data_transforms_val = transforms.Compose([
-#     transforms.Resize((224, 224)),
-#     transforms.ToTensor(),
-#     transforms.Normalize(mean=[0.485, 0.456, 0.406],
-#                                 std=[0.229, 0.224, 0.225])])  
+valid_transformations = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                std=[0.229, 0.224, 0.225])])  
 
 normalize = transforms.Normalize(mean=[0.5752, 0.4495, 0.4012],
                                      std=[0.2086, 0.1911, 0.1827])
 
-train_transformations=transforms.Compose([
-    transforms.Resize(256),
-    RandomFiveCrop(224),
-    transforms.RandomHorizontalFlip(),
-    transforms.ToTensor(),
-    normalize,
-])
+# train_transformations=transforms.Compose([
+#     transforms.Resize(256),
+#     RandomFiveCrop(224),
+#     transforms.RandomHorizontalFlip(),
+#     transforms.ToTensor(),
+#     normalize,
+# ])
 
-valid_transformations=transforms.Compose([
-    transforms.Resize(256),
-    transforms.CenterCrop(224),
-    transforms.ToTensor(),
-    normalize,
-])
+# valid_transformations=transforms.Compose([
+#     transforms.Resize(256),
+#     transforms.CenterCrop(224),
+#     transforms.ToTensor(),
+#     normalize,
+# ])
 
 # base_path = "/content/drive/My Drive/Thesis_Final"
 base_path = ""
@@ -282,7 +282,11 @@ def freeze_model(model):
             for param in model.fc.parameters():
                 param.requires_grad = True
         except:
-            raise Exception("Cannot Freeze model stage. No layer name classfier or fc!!")
+            try: 
+                for param in model.heads.parameters():
+                    param.requires_grad = True
+            except:
+                raise Exception("Cannot Freeze model stage. No layer name classfier or fc or heads!!")
 
 def unfreeze_model(model):
     print("----- Unfreeze whole architecture for fine tuning ------")
@@ -316,7 +320,7 @@ def train(train_loader, model, criterion, optimizer, epoch, num_epoch):
             labels = labels.to(device)
 
             # Compute output
-            output = model(images)
+            output = model(images).to(device)
             loss = criterion(output,labels)
 
             # add R1 regularization
@@ -390,7 +394,7 @@ def validate(valid_loader, model, criterion, epoch, num_epoch):
             labels = labels.to(device)
 
             # Compute output
-            output = model(images)
+            output = model(images).to(device)
             loss = criterion(output,labels)
 
             # add R1 regularization
@@ -418,7 +422,7 @@ def validate(valid_loader, model, criterion, epoch, num_epoch):
 
 
             # progressbar
-            pbar.set_description(f'VALIDATING [{epoch:03d}/{num_epoch}]')
+            pbar.set_description(f'VALIDATING [{epoch:02d}/{num_epoch}]')
             pbar.update(1)
             
         
@@ -496,9 +500,9 @@ def main(input_feature: str, model_id: str, dataset: str):
     if os.path.isfile(model_path):
       model = torch.load(model_path, map_location=device)
       print(f"Load model {model_path} with pre-trained weights with deivce")
-    elif model_name == "dan":
-        model = DAN().to(device)
-        print(f"Load model DAN with pre-trained resnet18_msceleb weights with deivce")
+    # elif model_name == "dan":
+    #     model = DAN().to(device)
+    #     print(f"Load model DAN with pre-trained resnet18_msceleb weights with deivce")
     else:
       try:
         model = torchvision.models.get_model(model_name, weights="IMAGENET1K_V2").to(device)
@@ -512,20 +516,21 @@ def main(input_feature: str, model_id: str, dataset: str):
 
     # Change model with new classifier
     if has_prefix(model_name, ["enet", "mobilenet_v3_large"]):
-        model.classifier = CustomClassifier(model.classifier[0].in_features)
+        model.classifier = CustomClassifier(model.classifier[0].in_features).to(device)
         print("Change new classifier at classifier layer")
     elif has_prefix(model_name, ["fan_", "resnet", "inception_v3"]):
-        model.fc = CustomClassifier(model.fc.in_features)
+        model.fc = CustomClassifier(model.fc.in_features).to(device)
         print("Change new classifier at fc layer")
     elif has_prefix(model_name, ["mnasnet"]):
-        model.classifier = CustomClassifier(model.classifier[1].in_features)
+        model.classifier = CustomClassifier(model.classifier[1].in_features).to(device)
         print("Change new classifier at classifier layer")
     elif has_prefix(model_name, ["densenet"]):
-        model.classifier = CustomClassifier(model.classifier.in_features)
+        model.classifier = CustomClassifier(model.classifier.in_features).to(device)
         print("Change new classifier at classifier layer")
     elif has_prefix(model_name, ["vit_"]):
-        model.heads = CustomClassifier(model.heads.head.in_features)
+        model.heads = CustomClassifier(model.heads.head.in_features).to(device)
         print("Change new classifier at head layer")
+#         pass
     elif has_prefix(model_name, ["vgg"]): pass
 
     # try:
@@ -542,9 +547,20 @@ def main(input_feature: str, model_id: str, dataset: str):
     print(">> Loading optimizer, criterition, logger")
     # define optimizer
     # optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9) # Adam 
-    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=0.0005)
     # scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.1, patience=10, verbose=True, min_lr=0.00001)
+
+    # Normal    
+    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=0.0005)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=15, gamma=0.1)
+
+    # # for Dan: 
+    # criterion_af = AffinityLoss(device, num_class=3)
+    # criterion_pt = PartitionLoss()
+    # params = list(model.parameters()) + list(criterion_af.parameters())
+    # optimizer = torch.optim.Adam(params, 0.0001,weight_decay = 0)
+    # scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma = 0.6)
+    
+    
     # define criterion
     criterion = nn.CrossEntropyLoss()
     
