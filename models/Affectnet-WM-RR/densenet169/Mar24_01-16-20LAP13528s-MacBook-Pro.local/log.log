@@ -1,0 +1,202 @@
+>>>>    Running on input feature WM \ model name densenet169 \ dataset Affectnet-WM-RR      >>>>>
+******************************************************
+>> Loading base dataset
+>> Loading model
+Load model densenet169 with IMAGENET1K_V1 pre-trained weights with device
+Change new classifier at classifier layer
+>> Loading optimizer, criterition, logger
+[>] Begin Fine tuning ------------------------------------------
+----- Freeze base architecture for fine tuning ------
+[-] TRAIN [01/5] | loss=167.4623 | acc=0.4475 | rec=0.4474 | f1=0.4237 | aucpr=0.4506 | aucroc=0.6291
+[-] VALIDATING [01/5] | loss=167.1877 | acc=0.5632 | rec=0.5628 | f1=0.5290 | aucpr=0.5574 | aucroc=0.7362
+[<*>] Save model with tag acc at epoch 1 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 1 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 1593.29s | lr = 0.001
+
+[-] TRAIN [02/5] | loss=167.2347 | acc=0.5217 | rec=0.5216 | f1=0.4829 | aucpr=0.5047 | aucroc=0.6882
+[-] VALIDATING [02/5] | loss=167.1377 | acc=0.5809 | rec=0.5806 | f1=0.5399 | aucpr=0.5662 | aucroc=0.7438
+[<*>] Save model with tag acc at epoch 2 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 2 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 1564.27s | lr = 0.001
+
+[-] TRAIN [03/5] | loss=167.2205 | acc=0.5199 | rec=0.5198 | f1=0.4760 | aucpr=0.5060 | aucroc=0.6896
+[-] VALIDATING [03/5] | loss=167.1234 | acc=0.5704 | rec=0.5697 | f1=0.5238 | aucpr=0.5719 | aucroc=0.7450
+[*] epoch time = 1553.61s | lr = 0.001
+
+[-] TRAIN [04/5] | loss=167.1893 | acc=0.5469 | rec=0.5468 | f1=0.5041 | aucpr=0.5194 | aucroc=0.7014
+[-] VALIDATING [04/5] | loss=167.1254 | acc=0.5671 | rec=0.5664 | f1=0.5252 | aucpr=0.5683 | aucroc=0.7414
+[*] epoch time = 1570.84s | lr = 0.001
+
+[-] TRAIN [05/5] | loss=167.1874 | acc=0.5370 | rec=0.5368 | f1=0.4955 | aucpr=0.5202 | aucroc=0.7040
+[-] VALIDATING [05/5] | loss=167.1124 | acc=0.5927 | rec=0.5925 | f1=0.5666 | aucpr=0.5713 | aucroc=0.7466
+[<*>] Save model with tag acc at epoch 5 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 5 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 1536.76s | lr = 0.001
+
+[>] Begin Training ---------------------------------------------
+----- Unfreeze whole architecture for fine tuning ------
+[-] TRAIN [01/35] | loss=31.9704 | acc=0.5050 | rec=0.5048 | f1=0.4262 | aucpr=0.4866 | aucroc=0.6662
+[-] VALIDATING [01/35] | loss=8.4525 | acc=0.4728 | rec=0.4718 | f1=0.3946 | aucpr=0.5226 | aucroc=0.6893
+[*] epoch time = 3192.78s | lr = 0.001
+
+[-] TRAIN [02/35] | loss=6.0663 | acc=0.5501 | rec=0.5500 | f1=0.4810 | aucpr=0.5149 | aucroc=0.6992
+[-] VALIDATING [02/35] | loss=4.6518 | acc=0.5769 | rec=0.5765 | f1=0.5029 | aucpr=0.5416 | aucroc=0.7145
+[*] epoch time = 3156.69s | lr = 0.001
+
+[-] TRAIN [03/35] | loss=4.1559 | acc=0.5598 | rec=0.5596 | f1=0.4922 | aucpr=0.5197 | aucroc=0.7030
+[-] VALIDATING [03/35] | loss=4.2442 | acc=0.4434 | rec=0.4437 | f1=0.3711 | aucpr=0.4971 | aucroc=0.6681
+[*] epoch time = 3113.67s | lr = 0.001
+
+[-] TRAIN [04/35] | loss=3.5802 | acc=0.5605 | rec=0.5603 | f1=0.4985 | aucpr=0.5244 | aucroc=0.7064
+[-] VALIDATING [04/35] | loss=3.6031 | acc=0.4551 | rec=0.4541 | f1=0.3828 | aucpr=0.5476 | aucroc=0.7236
+[*] epoch time = 3151.69s | lr = 0.001
+
+[-] TRAIN [05/35] | loss=3.2723 | acc=0.5656 | rec=0.5655 | f1=0.5010 | aucpr=0.5291 | aucroc=0.7076
+[-] VALIDATING [05/35] | loss=3.3174 | acc=0.5521 | rec=0.5512 | f1=0.4834 | aucpr=0.5671 | aucroc=0.7252
+[*] epoch time = 3105.79s | lr = 0.001
+
+[-] TRAIN [06/35] | loss=3.0524 | acc=0.5749 | rec=0.5747 | f1=0.5152 | aucpr=0.5327 | aucroc=0.7069
+[-] VALIDATING [06/35] | loss=3.1209 | acc=0.5311 | rec=0.5302 | f1=0.4529 | aucpr=0.5526 | aucroc=0.7250
+[*] epoch time = 3088.10s | lr = 0.001
+
+[-] TRAIN [07/35] | loss=2.8827 | acc=0.5785 | rec=0.5784 | f1=0.5180 | aucpr=0.5345 | aucroc=0.7081
+[-] VALIDATING [07/35] | loss=3.5066 | acc=0.3955 | rec=0.3961 | f1=0.2996 | aucpr=0.5024 | aucroc=0.6806
+[*] epoch time = 3138.54s | lr = 0.001
+
+[-] TRAIN [08/35] | loss=2.7214 | acc=0.5844 | rec=0.5842 | f1=0.5212 | aucpr=0.5383 | aucroc=0.7153
+[-] VALIDATING [08/35] | loss=2.6537 | acc=0.5645 | rec=0.5637 | f1=0.4902 | aucpr=0.5597 | aucroc=0.7298
+[*] epoch time = 2864.59s | lr = 0.001
+
+[-] TRAIN [09/35] | loss=2.6170 | acc=0.5837 | rec=0.5835 | f1=0.5204 | aucpr=0.5408 | aucroc=0.7165
+[-] VALIDATING [09/35] | loss=2.5949 | acc=0.5914 | rec=0.5907 | f1=0.5159 | aucpr=0.5578 | aucroc=0.7296
+[*] epoch time = 2963.65s | lr = 0.001
+
+[-] TRAIN [10/35] | loss=2.5653 | acc=0.5863 | rec=0.5862 | f1=0.5195 | aucpr=0.5404 | aucroc=0.7190
+[-] VALIDATING [10/35] | loss=2.5690 | acc=0.5822 | rec=0.5814 | f1=0.5001 | aucpr=0.5597 | aucroc=0.7259
+[*] epoch time = 3046.69s | lr = 0.001
+
+[-] TRAIN [11/35] | loss=1.2946 | acc=0.6095 | rec=0.6094 | f1=0.5315 | aucpr=0.5512 | aucroc=0.7322
+[-] VALIDATING [11/35] | loss=1.1831 | acc=0.6306 | rec=0.6302 | f1=0.5413 | aucpr=0.5742 | aucroc=0.7397
+[<*>] Save model with tag acc at epoch 11 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 11 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 4898.94s | lr = 0.0001
+
+[-] TRAIN [12/35] | loss=1.2292 | acc=0.6066 | rec=0.6065 | f1=0.5306 | aucpr=0.5533 | aucroc=0.7289
+[-] VALIDATING [12/35] | loss=1.1515 | acc=0.6372 | rec=0.6366 | f1=0.5421 | aucpr=0.5821 | aucroc=0.7382
+[<*>] Save model with tag acc at epoch 12 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 12 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 3292.00s | lr = 0.0001
+
+[-] TRAIN [13/35] | loss=1.2243 | acc=0.6069 | rec=0.6067 | f1=0.5352 | aucpr=0.5531 | aucroc=0.7282
+[-] VALIDATING [13/35] | loss=1.1214 | acc=0.6385 | rec=0.6380 | f1=0.5454 | aucpr=0.5821 | aucroc=0.7382
+[<*>] Save model with tag acc at epoch 13 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 13 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 4328.43s | lr = 0.0001
+
+[-] TRAIN [14/35] | loss=1.2110 | acc=0.6101 | rec=0.6099 | f1=0.5382 | aucpr=0.5576 | aucroc=0.7320
+[-] VALIDATING [14/35] | loss=1.1346 | acc=0.6379 | rec=0.6373 | f1=0.5437 | aucpr=0.5804 | aucroc=0.7343
+[*] epoch time = 3543.00s | lr = 0.0001
+
+[-] TRAIN [15/35] | loss=1.2046 | acc=0.6038 | rec=0.6037 | f1=0.5293 | aucpr=0.5563 | aucroc=0.7343
+[-] VALIDATING [15/35] | loss=1.1474 | acc=0.6326 | rec=0.6321 | f1=0.5530 | aucpr=0.5794 | aucroc=0.7360
+[*] epoch time = 3579.09s | lr = 0.0001
+
+[-] TRAIN [16/35] | loss=1.1957 | acc=0.6129 | rec=0.6127 | f1=0.5422 | aucpr=0.5550 | aucroc=0.7347
+[-] VALIDATING [16/35] | loss=1.1385 | acc=0.6437 | rec=0.6432 | f1=0.5518 | aucpr=0.5822 | aucroc=0.7369
+[<*>] Save model with tag acc at epoch 16 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 16 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 3194.63s | lr = 0.0001
+
+[-] TRAIN [17/35] | loss=1.1853 | acc=0.6132 | rec=0.6130 | f1=0.5409 | aucpr=0.5600 | aucroc=0.7333
+[-] VALIDATING [17/35] | loss=1.1249 | acc=0.6379 | rec=0.6372 | f1=0.5495 | aucpr=0.5802 | aucroc=0.7305
+[*] epoch time = 3251.44s | lr = 0.0001
+
+[-] TRAIN [18/35] | loss=1.1739 | acc=0.6239 | rec=0.6238 | f1=0.5554 | aucpr=0.5625 | aucroc=0.7347
+[-] VALIDATING [18/35] | loss=1.1029 | acc=0.6424 | rec=0.6419 | f1=0.5499 | aucpr=0.5822 | aucroc=0.7389
+[*] epoch time = 3186.35s | lr = 0.0001
+
+[-] TRAIN [19/35] | loss=1.1937 | acc=0.6063 | rec=0.6062 | f1=0.5376 | aucpr=0.5538 | aucroc=0.7310
+[-] VALIDATING [19/35] | loss=1.1114 | acc=0.6418 | rec=0.6413 | f1=0.5540 | aucpr=0.5836 | aucroc=0.7384
+[*] epoch time = 3356.12s | lr = 0.0001
+
+[-] TRAIN [20/35] | loss=1.1742 | acc=0.6224 | rec=0.6223 | f1=0.5529 | aucpr=0.5593 | aucroc=0.7371
+[-] VALIDATING [20/35] | loss=1.1147 | acc=0.6444 | rec=0.6439 | f1=0.5492 | aucpr=0.5849 | aucroc=0.7363
+[<*>] Save model with tag acc at epoch 20 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 20 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 3325.36s | lr = 0.0001
+
+[-] TRAIN [21/35] | loss=1.1664 | acc=0.6176 | rec=0.6175 | f1=0.5452 | aucpr=0.5617 | aucroc=0.7368
+[-] VALIDATING [21/35] | loss=1.1235 | acc=0.6470 | rec=0.6464 | f1=0.5534 | aucpr=0.5809 | aucroc=0.7323
+[<*>] Save model with tag acc at epoch 21 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 21 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 4929.56s | lr = 0.0001
+
+[-] TRAIN [22/35] | loss=1.1663 | acc=0.6185 | rec=0.6183 | f1=0.5461 | aucpr=0.5611 | aucroc=0.7324
+[-] VALIDATING [22/35] | loss=1.0880 | acc=0.6444 | rec=0.6438 | f1=0.5499 | aucpr=0.5842 | aucroc=0.7344
+[*] epoch time = 3347.29s | lr = 0.0001
+
+[-] TRAIN [23/35] | loss=1.1584 | acc=0.6206 | rec=0.6204 | f1=0.5522 | aucpr=0.5655 | aucroc=0.7324
+[-] VALIDATING [23/35] | loss=1.0765 | acc=0.6503 | rec=0.6498 | f1=0.5610 | aucpr=0.5824 | aucroc=0.7354
+[<*>] Save model with tag acc at epoch 23 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 23 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 3171.11s | lr = 0.0001
+
+[-] TRAIN [24/35] | loss=1.1664 | acc=0.6154 | rec=0.6153 | f1=0.5409 | aucpr=0.5595 | aucroc=0.7324
+[-] VALIDATING [24/35] | loss=1.0926 | acc=0.6437 | rec=0.6432 | f1=0.5455 | aucpr=0.5831 | aucroc=0.7359
+[*] epoch time = 3191.79s | lr = 0.0001
+
+[-] TRAIN [25/35] | loss=1.1574 | acc=0.6244 | rec=0.6242 | f1=0.5547 | aucpr=0.5629 | aucroc=0.7319
+[-] VALIDATING [25/35] | loss=1.1300 | acc=0.6359 | rec=0.6355 | f1=0.5522 | aucpr=0.5833 | aucroc=0.7395
+[*] epoch time = 3198.31s | lr = 0.0001
+
+[-] TRAIN [26/35] | loss=1.0322 | acc=0.6239 | rec=0.6238 | f1=0.5558 | aucpr=0.5607 | aucroc=0.7323
+[-] VALIDATING [26/35] | loss=0.9596 | acc=0.6424 | rec=0.6419 | f1=0.5463 | aucpr=0.5829 | aucroc=0.7344
+[*] epoch time = 3252.47s | lr = 1e-05
+
+[-] TRAIN [27/35] | loss=1.0189 | acc=0.6244 | rec=0.6242 | f1=0.5563 | aucpr=0.5647 | aucroc=0.7339
+[-] VALIDATING [27/35] | loss=0.9591 | acc=0.6451 | rec=0.6445 | f1=0.5512 | aucpr=0.5844 | aucroc=0.7364
+[*] epoch time = 3114.09s | lr = 1e-05
+
+[-] TRAIN [28/35] | loss=1.0154 | acc=0.6251 | rec=0.6249 | f1=0.5555 | aucpr=0.5653 | aucroc=0.7343
+[-] VALIDATING [28/35] | loss=0.9563 | acc=0.6451 | rec=0.6445 | f1=0.5481 | aucpr=0.5840 | aucroc=0.7349
+[*] epoch time = 3104.56s | lr = 1e-05
+
+[-] TRAIN [29/35] | loss=1.0233 | acc=0.6221 | rec=0.6220 | f1=0.5515 | aucpr=0.5604 | aucroc=0.7351
+[-] VALIDATING [29/35] | loss=0.9595 | acc=0.6437 | rec=0.6432 | f1=0.5532 | aucpr=0.5848 | aucroc=0.7362
+[*] epoch time = 3099.89s | lr = 1e-05
+
+[-] TRAIN [30/35] | loss=1.0134 | acc=0.6242 | rec=0.6241 | f1=0.5554 | aucpr=0.5629 | aucroc=0.7348
+[-] VALIDATING [30/35] | loss=0.9576 | acc=0.6451 | rec=0.6445 | f1=0.5524 | aucpr=0.5853 | aucroc=0.7354
+[*] epoch time = 3046.10s | lr = 1e-05
+
+[-] TRAIN [31/35] | loss=1.0151 | acc=0.6221 | rec=0.6220 | f1=0.5523 | aucpr=0.5606 | aucroc=0.7341
+[-] VALIDATING [31/35] | loss=0.9533 | acc=0.6451 | rec=0.6445 | f1=0.5486 | aucpr=0.5861 | aucroc=0.7352
+[*] epoch time = 8661.25s | lr = 1e-05
+
+[-] TRAIN [32/35] | loss=1.0082 | acc=0.6284 | rec=0.6283 | f1=0.5561 | aucpr=0.5632 | aucroc=0.7369
+[-] VALIDATING [32/35] | loss=0.9464 | acc=0.6490 | rec=0.6484 | f1=0.5504 | aucpr=0.5861 | aucroc=0.7356
+[*] epoch time = 3318.96s | lr = 1e-05
+
+[-] TRAIN [33/35] | loss=1.0074 | acc=0.6262 | rec=0.6260 | f1=0.5525 | aucpr=0.5648 | aucroc=0.7357
+[-] VALIDATING [33/35] | loss=0.9469 | acc=0.6477 | rec=0.6471 | f1=0.5502 | aucpr=0.5844 | aucroc=0.7338
+[*] epoch time = 3358.20s | lr = 1e-05
+
+[-] TRAIN [34/35] | loss=1.0030 | acc=0.6316 | rec=0.6315 | f1=0.5597 | aucpr=0.5641 | aucroc=0.7361
+[-] VALIDATING [34/35] | loss=0.9467 | acc=0.6490 | rec=0.6484 | f1=0.5520 | aucpr=0.5852 | aucroc=0.7338
+[*] epoch time = 8102.63s | lr = 1e-05
+
+[-] TRAIN [35/35] | loss=1.0026 | acc=0.6284 | rec=0.6283 | f1=0.5545 | aucpr=0.5661 | aucroc=0.7372
+[-] VALIDATING [35/35] | loss=0.9515 | acc=0.6523 | rec=0.6517 | f1=0.5518 | aucpr=0.5829 | aucroc=0.7330
+[<*>] Save model with tag acc at epoch 35 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 35 at models/Affectnet-WM-RR/densenet169/Mar24_01-16-20LAP13528s-MacBook-Pro.local/densenet169_rec.pt
+[*] epoch time = 3231.41s | lr = 1e-05
+
+[>] Best Valid -------------------------------------------------
+[+] acc=0.6523
+[+] rec=0.6517
+[+] f1=0.5666
+[+] aucpr=0.5861
+[+] aucroc=0.7466
+
+[*] Fini! -----------------------------------------------------
+[!] total time = 1 day, 13:25:24.687168s
