@@ -1,0 +1,206 @@
+>>>>    Running on input feature TH \ model name densenet169 \ dataset Affectnet-TH-RR      >>>>>
+******************************************************
+>> Loading base dataset
+>> Loading model
+Load model densenet169 with IMAGENET1K_V1 pre-trained weights with device
+Change new classifier at classifier layer
+>> Loading optimizer, criterition, logger
+[>] Begin Fine tuning ------------------------------------------
+----- Freeze base architecture for fine tuning ------
+[-] TRAIN [01/5] | loss=167.4149 | acc=0.5193 | rec=0.5192 | f1=0.4876 | aucpr=0.5051 | aucroc=0.6870
+[-] VALIDATING [01/5] | loss=167.1223 | acc=0.6166 | rec=0.6162 | f1=0.5646 | aucpr=0.5775 | aucroc=0.7434
+[<*>] Save model with tag acc at epoch 1 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 1 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 493.83s | lr = 0.001
+
+[-] TRAIN [02/5] | loss=167.2045 | acc=0.5551 | rec=0.5550 | f1=0.5142 | aucpr=0.5319 | aucroc=0.7099
+[-] VALIDATING [02/5] | loss=167.0965 | acc=0.6319 | rec=0.6316 | f1=0.5624 | aucpr=0.5810 | aucroc=0.7353
+[<*>] Save model with tag acc at epoch 2 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 2 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 668.25s | lr = 0.001
+
+[-] TRAIN [03/5] | loss=167.1579 | acc=0.5754 | rec=0.5752 | f1=0.5329 | aucpr=0.5441 | aucroc=0.7180
+[-] VALIDATING [03/5] | loss=167.1096 | acc=0.6115 | rec=0.6114 | f1=0.5716 | aucpr=0.5925 | aucroc=0.7512
+[*] epoch time = 597.95s | lr = 0.001
+
+[-] TRAIN [04/5] | loss=167.1410 | acc=0.5780 | rec=0.5779 | f1=0.5396 | aucpr=0.5522 | aucroc=0.7180
+[-] VALIDATING [04/5] | loss=167.0594 | acc=0.6347 | rec=0.6345 | f1=0.5868 | aucpr=0.5917 | aucroc=0.7499
+[<*>] Save model with tag acc at epoch 4 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 4 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 605.05s | lr = 0.001
+
+[-] TRAIN [05/5] | loss=167.1564 | acc=0.5690 | rec=0.5688 | f1=0.5236 | aucpr=0.5372 | aucroc=0.7085
+[-] VALIDATING [05/5] | loss=167.0591 | acc=0.6341 | rec=0.6339 | f1=0.5682 | aucpr=0.5864 | aucroc=0.7375
+[*] epoch time = 634.94s | lr = 0.001
+
+[>] Begin Training ---------------------------------------------
+----- Unfreeze whole architecture for fine tuning ------
+[-] TRAIN [01/35] | loss=29.7209 | acc=0.5574 | rec=0.5572 | f1=0.4931 | aucpr=0.5216 | aucroc=0.6994
+[-] VALIDATING [01/35] | loss=7.8820 | acc=0.4419 | rec=0.4412 | f1=0.3711 | aucpr=0.5431 | aucroc=0.7118
+[*] epoch time = 648.67s | lr = 0.001
+
+[-] TRAIN [02/35] | loss=5.7527 | acc=0.5814 | rec=0.5812 | f1=0.5173 | aucpr=0.5378 | aucroc=0.7134
+[-] VALIDATING [02/35] | loss=4.4577 | acc=0.6137 | rec=0.6135 | f1=0.5327 | aucpr=0.5649 | aucroc=0.7297
+[*] epoch time = 661.61s | lr = 0.001
+
+[-] TRAIN [03/35] | loss=3.9847 | acc=0.6028 | rec=0.6026 | f1=0.5441 | aucpr=0.5456 | aucroc=0.7221
+[-] VALIDATING [03/35] | loss=3.7283 | acc=0.5576 | rec=0.5575 | f1=0.4881 | aucpr=0.5550 | aucroc=0.7395
+[*] epoch time = 345.03s | lr = 0.001
+
+[-] TRAIN [04/35] | loss=3.4030 | acc=0.6024 | rec=0.6022 | f1=0.5349 | aucpr=0.5487 | aucroc=0.7222
+[-] VALIDATING [04/35] | loss=3.1455 | acc=0.6370 | rec=0.6367 | f1=0.5526 | aucpr=0.5709 | aucroc=0.7313
+[<*>] Save model with tag acc at epoch 4 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 4 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 246.75s | lr = 0.001
+
+[-] TRAIN [05/35] | loss=3.0755 | acc=0.6092 | rec=0.6090 | f1=0.5440 | aucpr=0.5506 | aucroc=0.7222
+[-] VALIDATING [05/35] | loss=3.1197 | acc=0.5003 | rec=0.5004 | f1=0.4498 | aucpr=0.5569 | aucroc=0.7342
+[*] epoch time = 226.73s | lr = 0.001
+
+[-] TRAIN [06/35] | loss=2.8577 | acc=0.6023 | rec=0.6021 | f1=0.5310 | aucpr=0.5459 | aucroc=0.7256
+[-] VALIDATING [06/35] | loss=2.6988 | acc=0.6387 | rec=0.6384 | f1=0.5457 | aucpr=0.5704 | aucroc=0.7317
+[<*>] Save model with tag acc at epoch 6 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 6 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 233.94s | lr = 0.001
+
+[-] TRAIN [07/35] | loss=2.6597 | acc=0.6091 | rec=0.6089 | f1=0.5388 | aucpr=0.5498 | aucroc=0.7243
+[-] VALIDATING [07/35] | loss=2.7135 | acc=0.5457 | rec=0.5457 | f1=0.4774 | aucpr=0.5808 | aucroc=0.7484
+[*] epoch time = 229.16s | lr = 0.001
+
+[-] TRAIN [08/35] | loss=2.5276 | acc=0.6116 | rec=0.6114 | f1=0.5374 | aucpr=0.5518 | aucroc=0.7273
+[-] VALIDATING [08/35] | loss=2.9700 | acc=0.4226 | rec=0.4228 | f1=0.3326 | aucpr=0.5744 | aucroc=0.7535
+[*] epoch time = 249.81s | lr = 0.001
+
+[-] TRAIN [09/35] | loss=2.4806 | acc=0.6109 | rec=0.6107 | f1=0.5391 | aucpr=0.5502 | aucroc=0.7271
+[-] VALIDATING [09/35] | loss=2.4916 | acc=0.6120 | rec=0.6117 | f1=0.5468 | aucpr=0.5741 | aucroc=0.7253
+[*] epoch time = 249.80s | lr = 0.001
+
+[-] TRAIN [10/35] | loss=2.4624 | acc=0.6067 | rec=0.6065 | f1=0.5317 | aucpr=0.5521 | aucroc=0.7257
+[-] VALIDATING [10/35] | loss=2.6227 | acc=0.5502 | rec=0.5497 | f1=0.4908 | aucpr=0.5816 | aucroc=0.7333
+[*] epoch time = 237.50s | lr = 0.001
+
+[-] TRAIN [11/35] | loss=1.2084 | acc=0.6206 | rec=0.6204 | f1=0.5406 | aucpr=0.5604 | aucroc=0.7297
+[-] VALIDATING [11/35] | loss=1.0863 | acc=0.6438 | rec=0.6435 | f1=0.5424 | aucpr=0.5764 | aucroc=0.7313
+[<*>] Save model with tag acc at epoch 11 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 11 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 246.73s | lr = 0.0001
+
+[-] TRAIN [12/35] | loss=1.1349 | acc=0.6294 | rec=0.6291 | f1=0.5485 | aucpr=0.5609 | aucroc=0.7317
+[-] VALIDATING [12/35] | loss=1.0907 | acc=0.6466 | rec=0.6463 | f1=0.5493 | aucpr=0.5799 | aucroc=0.7280
+[<*>] Save model with tag acc at epoch 12 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 12 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 255.53s | lr = 0.0001
+
+[-] TRAIN [13/35] | loss=1.1265 | acc=0.6263 | rec=0.6261 | f1=0.5465 | aucpr=0.5633 | aucroc=0.7340
+[-] VALIDATING [13/35] | loss=1.0801 | acc=0.6529 | rec=0.6526 | f1=0.5544 | aucpr=0.5780 | aucroc=0.7290
+[<*>] Save model with tag acc at epoch 13 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 13 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 248.16s | lr = 0.0001
+
+[-] TRAIN [14/35] | loss=1.1301 | acc=0.6272 | rec=0.6269 | f1=0.5501 | aucpr=0.5614 | aucroc=0.7335
+[-] VALIDATING [14/35] | loss=1.0604 | acc=0.6506 | rec=0.6503 | f1=0.5504 | aucpr=0.5841 | aucroc=0.7281
+[*] epoch time = 238.51s | lr = 0.0001
+
+[-] TRAIN [15/35] | loss=1.1220 | acc=0.6312 | rec=0.6309 | f1=0.5544 | aucpr=0.5639 | aucroc=0.7285
+[-] VALIDATING [15/35] | loss=1.0841 | acc=0.6495 | rec=0.6491 | f1=0.5489 | aucpr=0.5835 | aucroc=0.7255
+[*] epoch time = 235.44s | lr = 0.0001
+
+[-] TRAIN [16/35] | loss=1.1137 | acc=0.6300 | rec=0.6297 | f1=0.5507 | aucpr=0.5664 | aucroc=0.7302
+[-] VALIDATING [16/35] | loss=1.0568 | acc=0.6546 | rec=0.6543 | f1=0.5559 | aucpr=0.5845 | aucroc=0.7244
+[<*>] Save model with tag acc at epoch 16 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 16 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 115.69s | lr = 0.0001
+
+[-] TRAIN [17/35] | loss=1.1164 | acc=0.6320 | rec=0.6318 | f1=0.5550 | aucpr=0.5624 | aucroc=0.7308
+[-] VALIDATING [17/35] | loss=1.0556 | acc=0.6495 | rec=0.6491 | f1=0.5524 | aucpr=0.5820 | aucroc=0.7246
+[*] epoch time = 106.64s | lr = 0.0001
+
+[-] TRAIN [18/35] | loss=1.1070 | acc=0.6337 | rec=0.6335 | f1=0.5566 | aucpr=0.5622 | aucroc=0.7330
+[-] VALIDATING [18/35] | loss=1.0752 | acc=0.6466 | rec=0.6463 | f1=0.5464 | aucpr=0.5832 | aucroc=0.7279
+[*] epoch time = 86.97s | lr = 0.0001
+
+[-] TRAIN [19/35] | loss=1.1026 | acc=0.6338 | rec=0.6336 | f1=0.5547 | aucpr=0.5650 | aucroc=0.7322
+[-] VALIDATING [19/35] | loss=1.0402 | acc=0.6540 | rec=0.6537 | f1=0.5530 | aucpr=0.5886 | aucroc=0.7248
+[*] epoch time = 74.56s | lr = 0.0001
+
+[-] TRAIN [20/35] | loss=1.1037 | acc=0.6360 | rec=0.6358 | f1=0.5572 | aucpr=0.5651 | aucroc=0.7320
+[-] VALIDATING [20/35] | loss=1.0598 | acc=0.6506 | rec=0.6503 | f1=0.5480 | aucpr=0.5832 | aucroc=0.7276
+[*] epoch time = 74.14s | lr = 0.0001
+
+[-] TRAIN [21/35] | loss=1.0994 | acc=0.6317 | rec=0.6314 | f1=0.5513 | aucpr=0.5629 | aucroc=0.7334
+[-] VALIDATING [21/35] | loss=1.0610 | acc=0.6529 | rec=0.6526 | f1=0.5544 | aucpr=0.5824 | aucroc=0.7258
+[*] epoch time = 74.06s | lr = 0.0001
+
+[-] TRAIN [22/35] | loss=1.1034 | acc=0.6317 | rec=0.6314 | f1=0.5535 | aucpr=0.5607 | aucroc=0.7322
+[-] VALIDATING [22/35] | loss=1.0548 | acc=0.6483 | rec=0.6480 | f1=0.5510 | aucpr=0.5798 | aucroc=0.7273
+[*] epoch time = 74.31s | lr = 0.0001
+
+[-] TRAIN [23/35] | loss=1.0953 | acc=0.6357 | rec=0.6354 | f1=0.5568 | aucpr=0.5636 | aucroc=0.7321
+[-] VALIDATING [23/35] | loss=1.0498 | acc=0.6546 | rec=0.6543 | f1=0.5508 | aucpr=0.5860 | aucroc=0.7250
+[*] epoch time = 74.81s | lr = 0.0001
+
+[-] TRAIN [24/35] | loss=1.0960 | acc=0.6324 | rec=0.6322 | f1=0.5543 | aucpr=0.5636 | aucroc=0.7327
+[-] VALIDATING [24/35] | loss=1.0412 | acc=0.6568 | rec=0.6565 | f1=0.5571 | aucpr=0.5806 | aucroc=0.7265
+[<*>] Save model with tag acc at epoch 24 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 24 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 75.20s | lr = 0.0001
+
+[-] TRAIN [25/35] | loss=1.0919 | acc=0.6399 | rec=0.6397 | f1=0.5621 | aucpr=0.5644 | aucroc=0.7310
+[-] VALIDATING [25/35] | loss=1.0418 | acc=0.6563 | rec=0.6560 | f1=0.5571 | aucpr=0.5842 | aucroc=0.7252
+[*] epoch time = 74.34s | lr = 0.0001
+
+[-] TRAIN [26/35] | loss=0.9673 | acc=0.6329 | rec=0.6326 | f1=0.5522 | aucpr=0.5611 | aucroc=0.7337
+[-] VALIDATING [26/35] | loss=0.9090 | acc=0.6540 | rec=0.6537 | f1=0.5552 | aucpr=0.5848 | aucroc=0.7255
+[*] epoch time = 74.38s | lr = 1e-05
+
+[-] TRAIN [27/35] | loss=0.9525 | acc=0.6401 | rec=0.6399 | f1=0.5590 | aucpr=0.5665 | aucroc=0.7318
+[-] VALIDATING [27/35] | loss=0.9138 | acc=0.6546 | rec=0.6543 | f1=0.5562 | aucpr=0.5855 | aucroc=0.7248
+[*] epoch time = 74.44s | lr = 1e-05
+
+[-] TRAIN [28/35] | loss=0.9502 | acc=0.6371 | rec=0.6369 | f1=0.5563 | aucpr=0.5675 | aucroc=0.7331
+[-] VALIDATING [28/35] | loss=0.9030 | acc=0.6574 | rec=0.6571 | f1=0.5590 | aucpr=0.5888 | aucroc=0.7242
+[<*>] Save model with tag acc at epoch 28 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 28 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 74.78s | lr = 1e-05
+
+[-] TRAIN [29/35] | loss=0.9520 | acc=0.6352 | rec=0.6349 | f1=0.5567 | aucpr=0.5690 | aucroc=0.7329
+[-] VALIDATING [29/35] | loss=0.9031 | acc=0.6591 | rec=0.6588 | f1=0.5634 | aucpr=0.5875 | aucroc=0.7237
+[<*>] Save model with tag acc at epoch 29 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 29 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 75.44s | lr = 1e-05
+
+[-] TRAIN [30/35] | loss=0.9529 | acc=0.6359 | rec=0.6357 | f1=0.5547 | aucpr=0.5623 | aucroc=0.7344
+[-] VALIDATING [30/35] | loss=0.9050 | acc=0.6580 | rec=0.6577 | f1=0.5596 | aucpr=0.5875 | aucroc=0.7235
+[*] epoch time = 73.16s | lr = 1e-05
+
+[-] TRAIN [31/35] | loss=0.9501 | acc=0.6363 | rec=0.6360 | f1=0.5555 | aucpr=0.5670 | aucroc=0.7324
+[-] VALIDATING [31/35] | loss=0.9041 | acc=0.6574 | rec=0.6571 | f1=0.5582 | aucpr=0.5866 | aucroc=0.7244
+[*] epoch time = 72.99s | lr = 1e-05
+
+[-] TRAIN [32/35] | loss=0.9506 | acc=0.6394 | rec=0.6392 | f1=0.5600 | aucpr=0.5679 | aucroc=0.7335
+[-] VALIDATING [32/35] | loss=0.9046 | acc=0.6597 | rec=0.6594 | f1=0.5622 | aucpr=0.5880 | aucroc=0.7240
+[<*>] Save model with tag acc at epoch 32 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_acc.pt
+[<*>] Save model with tag rec at epoch 32 at models/Affectnet-TH-RR/densenet169/Mar25_20-44-442c622b22bc82/densenet169_rec.pt
+[*] epoch time = 73.54s | lr = 1e-05
+
+[-] TRAIN [33/35] | loss=0.9529 | acc=0.6392 | rec=0.6389 | f1=0.5585 | aucpr=0.5644 | aucroc=0.7318
+[-] VALIDATING [33/35] | loss=0.9048 | acc=0.6568 | rec=0.6565 | f1=0.5565 | aucpr=0.5873 | aucroc=0.7238
+[*] epoch time = 72.88s | lr = 1e-05
+
+[-] TRAIN [34/35] | loss=0.9540 | acc=0.6380 | rec=0.6377 | f1=0.5581 | aucpr=0.5635 | aucroc=0.7320
+[-] VALIDATING [34/35] | loss=0.9048 | acc=0.6546 | rec=0.6543 | f1=0.5533 | aucpr=0.5878 | aucroc=0.7240
+[*] epoch time = 73.23s | lr = 1e-05
+
+[-] TRAIN [35/35] | loss=0.9478 | acc=0.6414 | rec=0.6411 | f1=0.5637 | aucpr=0.5647 | aucroc=0.7336
+[-] VALIDATING [35/35] | loss=0.9073 | acc=0.6563 | rec=0.6560 | f1=0.5559 | aucpr=0.5882 | aucroc=0.7238
+[*] epoch time = 72.98s | lr = 1e-05
+
+[>] Best Valid -------------------------------------------------
+[+] acc=0.6597
+[+] rec=0.6594
+[+] f1=0.5868
+[+] aucpr=0.5925
+[+] aucroc=0.7535
+
+[*] Fini! -----------------------------------------------------
+[!] total time = 2:32:09.442881s
