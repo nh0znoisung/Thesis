@@ -71,14 +71,13 @@ class CustomClassifier(nn.Module):
     def __init__(self, in_feature: int, out_feature: int = 3):
         super(CustomClassifier, self).__init__()
         
-        self.dense1 = nn.Linear(in_feature, 64) #2040
+        self.dense1 = nn.Linear(in_feature, 64)
         self.relu1 = nn.ReLU()
         self.dropout1 = nn.Dropout(0.2)
         self.dense2 = nn.Linear(64, 64)
         self.relu2 = nn.ReLU()
         self.dropout2 = nn.Dropout(0.2)
         self.dense3 = nn.Linear(64, out_feature)
-        # self.softmax = nn.Softmax(dim=1)
         
     def forward(self, x):
         x = self.dense1(x)
@@ -88,7 +87,6 @@ class CustomClassifier(nn.Module):
         x = self.relu2(x)
         x = self.dropout2(x)
         x = self.dense3(x)
-        # x = self.softmax(x)
         return x
 
 class AverageMeter(object):

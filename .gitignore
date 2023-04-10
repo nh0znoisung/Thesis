@@ -1,3 +1,11 @@
 datasets/
 .DS_Store
-pretrained_models/resnet18_msceleb.pth
+
+pretrained_models/TH/
+pretrained_models/WM
+
+logs/TH/
+logs/WM/
+
+models/Affectnet-TH-RR
+models/Affectnet-WM-RR
